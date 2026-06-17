@@ -1,6 +1,6 @@
 import React, { Suspense, lazy } from "react";
 import {useEffect} from 'react';
-import { Route, Switch } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import Layout from "./components/Layout";
 import PrivateRoute from "./utils/PrivateRoute";
 import JobStep1 from "./pages/Register/Scholarships/jobs/JobStep1";
