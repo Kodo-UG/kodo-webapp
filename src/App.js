@@ -40,7 +40,7 @@ const StepperElementTwo = lazy(() =>
     import("./pages/Register/Scholarships/sports/StepperElementTwo")
 );
 const StepperElementThree = lazy(() =>
-    import("./pages/Register/Scholarships/sports/StepperElementThree.")
+    import("./pages/Register/Scholarships/sports/StepperElementThree")
 );
 
 const FinalStepperElement = lazy(() =>
