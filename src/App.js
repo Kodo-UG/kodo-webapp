@@ -66,48 +66,6 @@ const Index = lazy(() => import("../src/pages/profile/index"));
 const Favorite = lazy(() => import("./pages/favorite"));
 const PaymentStatus = lazy(() => import("./pages/paymentStatus/index"));
 
-// useEffect(() => {
-//     const requestPermission = async () => {
-//       try {
-//         const permission = await Notification.requestPermission();
-//         if (permission === "granted") {
-//           const token = await getToken(messaging, {
-//             vapidKey: "BOQ4npi0BdciSPjBIJ4AaQ7U8SIw01zFOXctCPgOB9me9N33ng53tMwsDMH5tm80AcnB8RoMQWyI9FbLJAz9s0I",
-//           });
-//           console.log("FCM Token:", token);
-
-//           if (token) {
-//             localStorage.setItem("fcmToken", token);
-//           }
-
-//           //Save the token in fcmToken in the backend 
-//           const authToken = localStorage.getItem("token"); // or however you store your JWT
-
-//           await fetch("https://localhost:4000/api/v1/user/save/fcmToken", {
-//             method: "POST",
-//             headers: {
-//               "Content-Type": "application/json",
-//               Authorization: `Bearer ${authToken}`,
-//             },
-//             body: JSON.stringify({ fcmToken: token }),
-//           });
-
-//         } else {
-//           console.log("Notification permission denied");
-//         }
-//       } catch (error) {
-//         console.error("Error getting FCM token:", error);
-//       }
-//     };
-
-//     requestPermission();
-
-//     // Foreground message handler
-//     onMessage(messaging, (payload) => {
-//       console.log("Message received. ", payload);
-//       alert(payload.notification.title + ": " + payload.notification.body);
-//     });
-//   }, []);
 
 
 const App = () => {
