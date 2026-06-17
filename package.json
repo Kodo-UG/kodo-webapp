@@ -37,7 +37,7 @@
     "react-infinite-scroll-component": "^7.2.1",
     "react-query": "^3.39.3",
     "react-redux": "^9.3.0",
-    "react-router-dom": "^7.18.0",
+    "react-router-dom": "^6.30.4",
     "react-scripts": "5.0.1",
     "react-share-social": "^0.1.60",
     "react-slick": "^0.31.0",

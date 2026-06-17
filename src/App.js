@@ -93,7 +93,7 @@ const App = () => {
                 </div>
             }
         >
-            <Switch>
+            <Routes>
                 <Route exact path="/index" component={Index} />
                 <Route exact path="/signin" component={Signin} />
                 <Route exact path="/login/:userId" component={Login} />
@@ -189,7 +189,7 @@ const App = () => {
                     <Route exact path="/testimonals" component={Testimonals} />
                     <Route exact path="/" component={Home} />
                 </Layout>
-            </Switch>
+            </Routes>
         </Suspense>
     );
 };
