@@ -1,0 +1,214 @@
+@import url(//fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800);
+.pricing6 {
+  font-family: "Montserrat", sans-serif;
+  color: #8d97ad;
+  font-weight: 300;
+}
+
+.pricing6 h1,
+.pricing6 h2,
+.pricing6 h3,
+.pricing6 h4,
+.pricing6 h5,
+.pricing6 h6 {
+  color: #3e4555;
+}
+
+.pricing6 .font-weight-medium {
+  font-weight: 500;
+}
+
+.pricing6 .bg-light {
+  background-color: #f4f8fa !important;
+}
+
+.pricing6 h5 {
+  line-height: 22px;
+  font-size: 18px;
+}
+
+.pricing6 .subtitle {
+  color: #8d97ad;
+  line-height: 24px;
+}
+
+.pricing6 .card.card-shadow {
+  -webkit-box-shadow: 0px 0px 30px rgba(115, 128, 157, 0.1);
+  box-shadow: 0px 0px 30px rgba(115, 128, 157, 0.1);
+}
+
+.pricing6 .price-box sup {
+  top: -20px;
+  font-size: 16px;
+}
+
+.pricing6 .price-box .display-5 {
+  line-height: 58px;
+  font-size: 3rem;
+}
+
+.pricing6 .btn-md {
+  padding: 15px 45px;
+  font-size: 16px;
+}
+
+/* .pricing6 .text-info {
+  color: #188ef4 !important;
+} */
+
+.pricing6 .badge-danger {
+  background-color: #ff4d7e;
+}
+
+.pricing6 .font-14 {
+  font-size: 14px;
+}
+
+.app-box-container {
+  flex-flow: column;
+  height: 100%;
+}
+
+/* .app-box-container, .app-container {
+  background-color: #f4f3ef;
+  display: flex;
+} */
+
+.app-wrapper {
+  display: flex;
+  width: 100%;
+}
+.selections-container {
+  height: -moz-fit-content;
+  height: fit-content;
+  justify-content: center;
+  margin: auto;
+  overflow: hidden;
+  padding: 20px 12%;
+  position: relative;
+  text-align: center;
+  transition: height .1s;
+  width: 100%;
+}
+
+.option-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: auto;
+  max-width: 650px;
+}
+
+.sonic-btn {
+  background-color: #e22944;
+  font-size: 15px;
+  line-height: 18.75px;
+  padding: 12px 16px;
+  display: flex;
+  justify-content: center;
+  font-family: Lexend Deca, Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  color: #fff;
+}
+
+#school-search-container .option-list .select-option {
+  background-color:  #e22944;
+}
+
+.dropdown-container {
+  margin: auto;
+  max-width: 650px;
+  width: 100%;
+}
+
+#school-search-container h2 + .option-list, #school-search-container h2 + .dropdown-container {
+  margin-top: 1.75rem;
+}
+.dropdown-container .dropdown {
+  background-color: #fff;
+  border: 1px solid #e9e9e9;
+  border-radius: 5px;
+  padding: 15px 5px;
+  text-transform: none;
+  width: 100%;
+}
+.dropdown-container .dropdown .dropdown-top {
+  display: flex;
+  margin: auto;
+  padding: 10px 0;
+  position: relative;
+  width: 90%;
+}
+.dropdown-container .dropdown .dropdown-top .select-title {
+  color: #424242;
+  font-size: 16px;
+  font-weight: 500;
+  height: 28px;
+  letter-spacing: 0;
+  line-height: 28px;
+}
+.dropdown-container .arrow {
+  margin-top: 6px;
+  width: 25px;
+}
+.dropdown-container .dropdown .dropdown-top .arrow {
+  position: absolute;
+  right: 0;
+}
+.dropdown-container .dropdown .dropdown-break-line {
+  background-color: #c11b94;
+  height: 2px;
+  margin: auto;
+  width: 90%;
+}
+#school-search-container .dropdown-container .dropdown .dropdown-break-line {
+  background-color: var(--primary-700) !important;
+}
+.dropdown-container .dropdown-list {
+  background-color: #fff;
+  border-radius: 16px;
+  bottom: 0;
+  box-shadow: 0 2px 16px 0 rgba(0,0,0,.09);
+  height: 30%;
+  left: 0;
+  margin: 0 auto;
+  overflow: scroll;
+  position: fixed;
+  right: 0;
+  text-align: left;
+  top: 350px;
+  width: 40%;
+  z-index: 99999;
+}
+.dropdown-container .dropdown-list .option-button {
+  background-color: #fff;
+  border: none;
+  border-radius: 3px;
+  color: #424242;
+  display: block;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 28px;
+  padding: 5px;
+  text-align: left;
+  text-transform: capitalize;
+  width: 100%;
+  max-width: 50%;
+    padding-left: 4px;
+    padding-bottom: 5px;
+    padding-right: 4px;
+    padding-top: 5px;
+    width: 50%;
+}
+._optionBody_9bife_90 {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: 8rem;
+}
+._optionGroupFullWidth_9bife_11 ._option_9bife_5 {
+  display: flex;
+  width: 100%;
+  padding: 0.75rem 1.5rem;
+}

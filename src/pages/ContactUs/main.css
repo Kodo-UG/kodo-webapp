@@ -1,0 +1,557 @@
+.min-h-screen {
+  min-height: 100vh; /* Minimum height of the full screen */
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.bg-eeeef7 {
+  background-color: #eeeef7;
+}
+
+.bg-eee{
+  margin-top: -120px;
+}
+
+@media(min-width: 768px){
+  .bg-eee{
+      margin-top: 80px;
+  }
+}
+
+@media(min-width: 1024px){
+  .bg-eee{
+    margin-top: 50px;
+  }
+}
+
+
+
+.rounded-4xl {
+  border-radius: 32px; /* Tailwind typically uses 2rem (32px) for 4xl */
+}
+
+.relative {
+  position: relative;
+}
+
+.-mb-16 {
+  margin-bottom: -4rem; /* -64px */
+}
+.absolute {
+  position: absolute;
+}
+
+.top-0 {
+  top: 0;
+}
+
+.right-0 {
+  right: 0;
+}
+
+.h-64 {
+  height: 10rem; /* 256px */
+}
+
+.w-64 {
+  width: 10rem; /* 256px */
+}
+
+.relative {
+  position: relative;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.mb-8 {
+  margin-bottom: 2rem; /* 8 * 0.25rem */
+}
+
+.text-\[32px\] {
+  font-size: 32px;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.leading-tight {
+  line-height: 1.25;
+}
+
+.text-\[\#1A1060\] {
+  color: #1A1060;
+}
+
+.mb-16 {
+  margin-bottom: 4rem; /* 16 * 0.25rem */
+}
+
+.grid {
+  display: grid;
+}
+
+.gap-6 {
+  gap: 1.5rem; /* 6 * 0.25rem */
+}
+
+.md-grid-cols-3 {
+  /* Applies on medium (md) screens and above */
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .md-grid-cols-3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+}
+
+@media(min-width: 1280px){
+  .md-grid-cols-3{
+    width: 100%;
+  }
+}
+
+.mb-10{
+  margin-top: 20px;
+}
+
+.lg-grid-cols-4 {
+  /* Applies on medium (md) screens and above */
+  @media (min-width: 1024px) {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+.z-20 {
+  z-index: 20;
+}
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.rounded-4xl {
+  border-radius: 2rem; /* Adjust based on Tailwind's 4xl size */
+}
+
+.bg-white {
+  background-color: white;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.p-8 {
+  padding: 2rem; /* 8 * 0.25rem */
+}
+
+.mb-6 {
+  margin-bottom: 1.5rem; /* 6 * 0.25rem */
+}
+
+.flex {
+  display: flex;
+}
+
+.h-14 {
+  height: 3.5rem; /* 14 * 0.25rem */
+}
+
+.w-14 {
+  width: 3.5rem; /* 14 * 0.25rem */
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.rounded-2xl {
+  border-radius: 1rem; /* Adjust based on Tailwind's 2xl size */
+}
+
+.bg-kodo-cyan {
+  background-color: #00bcd4; /* Replace with your specific color if different */
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem; /* 2 * 0.25rem */
+}
+
+.text-base {
+  font-size: 1rem; /* Default base font size */
+  line-height: 1.5rem; /* Adjust according to Tailwind */
+}
+
+.font-medium {
+  font-weight: 500;
+}
+
+.text-\[\#1A1060\] {
+  color: #1A1060;
+}
+
+.text-sm {
+  font-size: 0.875rem; /* 14px */
+  line-height: 1.25rem; /* Adjust according to Tailwind */
+}
+
+.text-\[\#666666\] {
+  color: #666666;
+}
+
+.bg-gray-50 {
+  background-color: #F9FAFB; /* Tailwind's gray-50 */
+}
+
+.text-\[28px\] {
+  font-size: 28px;
+}
+
+.mb-16 {
+  margin-bottom: 4rem; /* 16 * 0.25rem = 4rem */
+}
+
+.space-y-6 > * + * {
+  margin-top: 1.5rem; /* 6 * 0.25rem = 1.5rem */
+}
+
+.grid {
+  display: grid;
+}
+
+.gap-6 {
+  gap: 1.5rem; /* 6 * 0.25rem = 1.5rem */
+}
+
+@media (min-width: 768px) { /* md breakpoint */
+  .md\:grid-cols-2 {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.h-12 {
+  height: 3rem; /* 12 * 0.25rem = 3rem */
+}
+
+.rounded-xl {
+  border-radius: 0.75rem; /* Equivalent to `xl` in Tailwind */
+}
+
+.border-\[\#E5E5E5\] {
+  border: 1px solid #E5E5E5;
+}
+
+.bg-white {
+  background-color: #ffffff;
+}
+
+.text-base {
+  font-size: 1rem; /* 16px */
+  line-height: 1.5rem;
+}
+
+.placeholder\:text-\[\#999999\]::placeholder {
+  color: #999999;
+}
+
+.min-h-\[180px\] {
+  min-height: 180px;
+}
+
+.rounded-xl {
+  border-radius: 0.75rem; /* Equivalent to `xl` in Tailwind */
+}
+
+.border-\[\#E5E5E5\] {
+  border: 1px solid #E5E5E5;
+}
+
+.bg-white {
+  background-color: #ffffff;
+}
+
+.p-4 {
+  padding: 1rem; /* 16px */
+}
+
+.text-base {
+  font-size: 1rem; /* 16px */
+  line-height: 1.5rem;
+}
+
+.placeholder\:text-\[\#999999\]::placeholder {
+  color: #999999;
+}
+
+.h-12 {
+  height: 3rem; /* 48px */
+}
+
+.rounded-xl {
+  border-radius: 0.75rem; /* Equivalent to `xl` in Tailwind */
+}
+
+.bg-\[\#00D6DD\] {
+  background-color: #00D6DD;
+}
+
+.px-8 {
+  padding-left: 2rem; /* 32px */
+  padding-right: 2rem;
+}
+
+.text-base {
+  font-size: 1rem; /* 16px */
+  line-height: 1.5rem;
+}
+
+.font-medium {
+  font-weight: 500;
+}
+
+.text-white {
+  color: #ffffff;
+}
+
+.hover\:bg-kodo-cyan\/90:hover {
+  background-color: rgba(0, 214, 221, 0.9); /* Assuming `kodo-cyan` is #00D6DD */
+}
+
+.text-center {
+  text-align: center;
+}
+
+.relative {
+  position: relative;
+}
+
+.aspect-1\.85\/1 {
+  aspect-ratio: 1.85 / 1;
+}
+
+.aspect {
+  aspect-ratio: 1.2 / 1;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.rounded-\[32px\] {
+  border-radius: 32px;
+}
+
+.object-cover {
+  object-fit: cover;
+}
+
+.rounded-lg {
+  border-radius: 0.5rem; /* 8px */
+}
+
+.motion {
+  width: 100%;
+}
+
+@media(min-width: 768px){
+  .motion{
+    width: 220px;
+  }
+}
+
+@media(min-width: 1024px){
+  .motion{
+    width: 280px;
+  }
+}
+
+@media(min-width: 1280px){
+  .motion{
+    width: 310px;
+  }
+}
+
+.rounded-4xl {
+  border-radius: 2rem; /* 32px */
+}
+
+.pb-24 {
+  padding-bottom: 6rem; /* 96px */
+}
+
+.relative {
+  position: relative;
+}
+
+.h-60 {
+  height: 15rem; /* 240px */
+}
+
+.w-full {
+  width: 100%;
+}
+
+.map{
+  margin-top: 50px;
+}
+
+@media(min-width: 768px){
+  .map{
+    width: 70%;
+    margin-left: 14%;
+  }
+}
+
+@media(min-width: 1024px){
+  .map{
+    width: 60%;
+    margin-left: 20%;
+  }
+}
+
+
+/* Form Section */
+.form-section {
+  background-color: #f9f9f9;
+  padding: 2rem;
+  border-radius: 32px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.form-section-container{
+  width: 100%;
+}
+
+@media(min-width: 768px){
+  .form-section-container{
+      width: 80%;
+      margin: auto; 
+  }
+ }
+
+ @media(min-width: 1024px){
+  .form-section-container{
+      width: 60%;
+      margin: auto; 
+  }
+ }
+
+/* Form */
+.form-container {
+  margin-bottom: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Input Fields */
+.input-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.input-field,
+textarea {
+  height: 3rem;
+  border-radius: 12px;
+  border: 1px solid #e5e5e5;
+  padding: 0.75rem;
+  font-size: 1rem;
+  background-color: white;
+}
+
+textarea {
+  min-height: 180px;
+}
+
+/* Send Button */
+.send-button {
+  height: 3rem;
+  border-radius: 12px;
+  background-color: #00d6dd;
+  font-size: 1rem;
+  font-weight: 500;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border: none;
+}
+
+.send-button:hover {
+  background-color: rgba(0, 214, 221, 0.9);
+}
+
+.contact-header-fix-error{
+  margin-top: 40px;
+}
+
+@media(min-width: 768px){
+  .contact-header-fix-error{
+    margin-top: 0px;
+    width: 100%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

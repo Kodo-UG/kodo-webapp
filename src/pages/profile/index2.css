@@ -1,0 +1,148 @@
+.tab-content>.tab-pane {
+    display: none;
+}
+
+
+
+.tab-content>.active {
+    display: block;
+}
+
+.tabs-menu ul li a {
+    padding: 10px 20px;
+    display: block;
+}
+
+.tabs-menu ul li .active {
+    color: var(--primary-bg-color);
+}
+
+.tabs-menu1 ul li a {
+    padding: 10px 20px;
+    display: block;
+}
+
+.tabs-menu-body {
+    border: 1px solid var(--border-cstm-color);
+}
+
+.tabs-menu-body p:last-child {
+    margin-bottom: 0;
+}
+
+.tab-menu-heading {
+    padding: 15px;
+    border: 1px solid var(--border-cstm-color);
+    border-bottom: 0;
+}
+
+.tab_wrapper .content_wrapper .tab_content.active p:last-child {
+    margin-bottom: 0;
+}
+
+.tabs-menu2 ul li a {
+    color: #636262;
+    padding: 10px 20px 11px 20px;
+}
+
+.tabs-menu2 ul li .active {
+    font-weight: 600;
+}
+
+.tabs-menu2 ul li .fade {
+    color: #eeee;
+}
+
+.nav.panel-tabs a {
+    border: 1px solid var(--border-cstm-color);
+    padding: 7px 15px;
+    border-radius: 5px;
+    transition: all ease 0.3s;
+}
+
+.nav.panel-tabs a.active {
+    border-radius: 5px;
+    border-color: var(--primary-bg-color);
+    color: var(--primary-bg-color) !important;
+}
+
+.nav.panel-tabs a.vertical-tabs.active {
+    color: #fff !important;
+    background-color: var(--primary-bg-color);
+}
+
+.tabs-menu4 .nav a {
+    padding: 10px 20px;
+    transition: all ease 0.3s;
+    border-bottom-left-radius: 0px !important;
+    border-bottom-right-radius: 0px !important;
+    border-radius: 5px;
+}
+
+.tabs-menu4 .nav a.active {
+    border-color: var(--primary-bg-color);
+    color: #fff !important;
+    background-color: var(--primary-bg-color);
+}
+
+.tabs-menu4 .nav a:hover {
+    color: var(--primary-bg-color);
+}
+
+
+.tab-pane {
+    display: none;
+}
+
+.tab-content>.active {
+    display: block;
+}
+
+.tabs-menu ul li a {
+    padding: 10px 20px;
+    display: block;
+}
+
+.tabs-menu ul li .active {
+    color: var(--primary-bg-color);
+}
+
+.tabs-menu1 ul li a {
+    padding: 10px 20px;
+    display: block;
+}
+
+.tabs-menu-body {
+    border: 1px solid var(--border-cstm-color);
+}
+
+.tabs-menu-body p:last-child {
+    margin-bottom: 0;
+}
+
+.tab-menu-heading {
+    padding: 15px;
+    border: 1px solid var(--border-cstm-color);
+    border-bottom: 0;
+}
+
+.tab_wrapper .content_wrapper .tab_content.active p:last-child {
+    margin-bottom: 0;
+}
+
+.tabs-menu2 ul li a {
+    color: #636262;
+    padding: 10px 20px 11px 20px;
+}
+
+.tabs-menu2 ul li .active {
+    font-weight: 600;
+}
+
+.tabs-menu2 ul li .fade {
+    color: #eeee;
+}
+
+
+
+

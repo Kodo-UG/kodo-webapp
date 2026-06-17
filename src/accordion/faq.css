@@ -1,0 +1,102 @@
+/* FAQ Container */
+.faq-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem; /* Equivalent to p-4 */
+    /* margin-top: -150px; */
+  }
+/* 
+  @media(min-width:300px){
+    .faq-container{
+        margin-top: -200px;
+    }
+  }
+
+  @media(max-width:767px){
+    .faq-container{
+        margin-top: -10px;
+    }
+  }
+   */
+  /* FAQ Title */
+  .faq-title {
+    font-size: 3.75rem; /* Equivalent to text-6xl */
+    font-weight: 700; /* Equivalent to font-bold */
+    color: #1a1f36;
+    margin-bottom: 2rem; /* Equivalent to mb-8 */
+  }
+  
+  /* FAQ Item */
+  .faq-item {
+    margin-top: 0.5rem; /* Equivalent to mt-2 */
+  }
+  
+  /* FAQ Button */
+  .faq-button {
+    width: 100%;
+    text-align: left;
+    padding: 0.5rem 0.5rem; /* Equivalent to px-2 py-2 */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 0.5rem; /* Equivalent to rounded-lg */
+    border: 1px solid rgba(0, 0, 0, 0.7);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .faq-button.open {
+    border-color: #00d6dd;
+    background-color: #00d6dd;
+  }
+  
+  /* Number inside FAQ */
+  .faq-number {
+    font-size: 1.125rem; /* Equivalent to text-lg */
+    padding: 0.25rem 0.5rem; /* Equivalent to px-2 py-1 */
+    border-radius: 0.375rem; /* Equivalent to rounded-md */
+    transition: all 0.3s ease-in-out;
+    font-weight: 600;
+    color: #1d2855;
+  }
+  
+  .faq-button.open .faq-number {
+    background-color: #00d6dd;
+    color: white;
+  }
+  
+  /* FAQ Question */
+  .faq-question {
+    font-size: 1.125rem; /* Equivalent to text-lg */
+    font-weight: 600;
+    transition: all 0.3s ease-in-out;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #1a1f36;
+  }
+  
+  .faq-button.open .faq-question {
+    background-color: #00d6dd;
+    color: white;
+  }
+  
+  /* Dropdown Icons */
+  .faq-icon {
+    font-size: 1.125rem; /* Equivalent to text-lg */
+    transition: all 0.3s ease-in-out;
+    border-radius: 50%;
+    padding: 0.25rem; /* Equivalent to p-1 */
+  }
+  
+  .faq-button.open .faq-icon {
+    background-color: #00d6dd;
+    color: white;
+  }
+  
+  /* FAQ Answer */
+  .faq-answer {
+    padding: 0.5rem 1.5rem 1rem; /* Equivalent to px-6 pb-4 */
+    color: #374151; /* Equivalent to text-gray-700 */
+    line-height: 1.625; /* Equivalent to leading-relaxed */
+  }
+  

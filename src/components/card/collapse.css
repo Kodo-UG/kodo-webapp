@@ -1,0 +1,41 @@
+.input-wrapper {
+  position: relative;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 0.5rem;
+  border-radius: 4px;
+}
+
+.input-field {
+  flex: 1;
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+
+.dropdown-icon {
+  margin-left: 0.5rem;
+  cursor: pointer;
+}
+
+.dropdown-icon.open {
+  transform: rotate(180deg);
+}
+
+.options-container {
+  margin-top: 1rem;
+}
+
+.option-field {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  border: none;
+  outline: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+}

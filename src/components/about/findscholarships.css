@@ -1,0 +1,88 @@
+/* Parent container */
+.find-scholarships-container {
+    width: 100%;
+    color: #1d2855;
+  }
+  
+  /* Image container */
+  .image-container {
+    display: flex;
+    justify-content: center;
+    height: 66.67%; /* Equivalent to h-4/6 */
+    width: 70%;
+    margin: auto;
+  }
+  
+  .image-container img {
+    object-fit: cover;
+  }
+  
+  /* CTA Container */
+  .cta-container {
+    max-width: 64rem; /* Equivalent to max-w-4xl */
+    margin-left: auto;
+    margin-right: auto;
+    /* padding: 10px; */
+  }
+  
+  /* CTA Box */
+  .cta-box {
+    text-align: center;
+    position: relative;
+    z-index: 10;
+    background-color: #06b6d4; /* Equivalent to bg-kodo-cyan */
+    border-radius: 1.5rem; /* Equivalent to rounded-3xl */
+    overflow: hidden;
+    height: 200px;
+  }
+
+  .cta-box-container{
+    margin-top: 30px;
+  }
+
+  @media(min-width: 768px){
+    .cta-box-container{
+        margin-top: -40px;
+    }
+  }
+  
+  /* Responsive Padding */
+  @media (min-width: 640px) {
+    .cta-box {
+      padding: 2rem; 
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .cta-box {
+      padding: 5rem; 
+    }
+  }
+  
+  /* Heading */
+  .cta-box h2 {
+    font-size: 1.4rem; /* Equivalent to text-responsive-3xl */
+    margin-bottom: 1.5rem; /* Equivalent to mb-6 */
+  }
+
+  @media(min-width:400px){
+    .cta-box h2{
+      font-size: 2rem; /* Equivalent to text-responsive-3xl */
+      margin-bottom: 1.5rem; /* Equivalent to mb-6 */
+    }
+  }
+  
+  /* Button */
+  .find-scholarships-btn {
+    display: inline-flex;
+    align-items: center;
+    background-color: white;
+    color: #1E2B4D;
+    padding: 0.75rem 1.5rem; /* Equivalent to px-6 py-3 */
+    border-radius: 9999px; /* Equivalent to rounded-full */
+    font-weight: 500;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out;
+    box-shadow: 0 5px 4px rgba(0, 0, 0, 0.7);
+  }
+  

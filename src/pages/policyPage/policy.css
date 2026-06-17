@@ -1,0 +1,101 @@
+.policyBox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #f0f4f8;
+    /* padding: 2rem; */
+}
+.policy{
+    /* width: 60rem; */
+    height: 100%;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.06);
+     backdrop-filter: blur(100px); 
+    border-radius: 5px;
+}
+.policy .content{
+    /* background-color: white; */
+    /* padding: 2rem; */
+    height: 80%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.policy .content h1{
+    font-weight: bolder;
+    font-size: 3rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+.policy .content .text{
+   /* background-color: green; */
+   height: 600px;
+   overflow-y: hidden;
+   padding: 1rem;
+   text-align: justify;
+   font-size: 18px;
+}
+.policy .content .text:hover{
+
+   overflow-y: scroll;
+  
+}
+
+.policy .other{
+    /* background-color: yellow; */
+    height: 20%;
+}
+.policy .other .checkbox{
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    height: 60%;
+    /* padding-left: 2rem;
+     padding-right: 2rem; */
+}
+.btnz{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+
+    padding-bottom: 0.5rem;
+    /* padding-right: 2rem; */
+    /* background-color: blue; */
+    height: 40%;
+}
+.butonCancel{
+   background-color: red;
+   height: 100%;
+    border-radius: 5px;
+    /* margin-left: 2rem; */
+    width: 10rem;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+}
+.butonCancel:hover{
+    background-color: white;
+    color: black;
+    border: 2px solid red;
+    transition: all;
+
+}
+.butonContinue{
+  border: 2px solid red;
+  
+   height: 100%;
+    border-radius: 5px;
+    /* margin-left: 2rem; */
+    width: 10rem;
+    font-size: 18px;
+    font-weight: bold;
+  
+}
+.butonContinue:hover{
+  border: 0px solid red;
+  background-color: red;
+  color: white;
+  
+}

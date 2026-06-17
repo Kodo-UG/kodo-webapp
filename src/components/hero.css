@@ -1,0 +1,138 @@
+/* Hero Section Container */
+.hero-section {
+    background-color: #EEEEF7;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    width: 100%;
+    margin: 0;
+  }
+  
+  /* Grid Layout */
+  .hero-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    justify-content: space-between;
+    margin-top: -100px;
+  }  
+  
+  @media(min-width: 768px){
+    .hero-grid{
+        margin-top: -70px;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .hero-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  /* Left Text Container */
+  .hero-text-container {
+    min-height: 1.5rem;
+  }
+
+  @media(min-width:1024px){
+    .hero-text-container{
+      margin-top: 40px;
+    }
+  }
+
+  @media(min-width:1280px){
+    .hero-text-container{
+      margin-top: 80px;
+    }
+  }
+  
+  .hero-title {
+    font-size: clamp(2rem, 5vw, 2.5rem);
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    margin-top: 4rem;
+    color: #1D2855;
+  }
+
+  @media(min-width: 768px){
+    .hero-title{
+      margin-top: 4rem;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .hero-title {
+      margin-top: 0;
+      font-size: 55px;
+    }
+  }
+  
+  .hero-description {
+    color: #1D2855;
+    margin-bottom: 2rem;
+    font-size: 1rem;
+    line-height: 1.2;
+  }
+  
+  @media (min-width: 1024px) {
+    .hero-description {
+      width: 400px;
+    }
+  }
+  
+  @media (min-width: 1280px) {
+    .hero-description {
+      width: 500px;
+    }
+  }
+  
+  /* Scholarship Button */
+  .hero-button {
+    background-color: #00D6DD;
+    color: #1D2855;
+    border-radius: 9999px;
+    padding: 0.75rem 1.25rem;
+    font-size: 1.125rem;
+    box-shadow: 0 5px 4px rgba(0, 0, 0, 0.7);
+    display: inline-block;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  /* Right Image Container */
+  .hero-image-container {
+    padding: 0.5rem;
+    min-height: 350px;
+    margin-top: 2.5rem;
+    width: 100%;
+    position: relative;
+  }
+
+  @media (min-width: 768px) {
+    .hero-image-container {
+      position: relative;
+      top: -2.5rem;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .hero-image-container {
+      position: relative;
+      top: -2.5rem;
+    }
+  }
+  
+  @media (min-width: 1280px) {
+    .hero-image-container {
+      position: relative;
+      height: 300px;
+      width: 500px;
+      top: -2rem;
+    }
+  }
+  
+  /* Image */
+  .hero-image {
+    border-radius: 2.5rem;
+    width: 100%;
+    object-fit: cover;
+  }
+  

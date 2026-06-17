@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&display=swap');
+
+body {
+    font-family: 'Archivo', sans-serif;
+}
+
+.mobile-cta-button {
+    display: block;
+    width: 50%;
+    padding: 12px;
+    /* text-align: center; */
+    background-color: #00D6DD;
+    color: #1a1f36;
+    font-weight: 500;
+    border-radius: 9999px;
+    transition: background-color 0.2s ease-in-out;
+  }

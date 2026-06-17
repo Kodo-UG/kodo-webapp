@@ -1,0 +1,251 @@
+.rounded-3xl {
+    border-radius: 1.5rem; /* 24px */
+}
+
+.bg-custom {
+    background-color: #eeeef7;
+}
+
+.p-8 {
+    padding: 2rem; /* 32px */
+}
+
+@media (min-width: 768px) { /* md breakpoint */
+    .md-p-10 {
+        padding: 2.5rem; /* 40px */
+    }
+}
+
+.mb-4 {
+    margin-bottom: 1rem; /* 16px */
+}
+
+.object-contain {
+    object-fit: cover;
+}
+
+.mt-2 {
+    margin-top: 0.5rem; /* 8px */
+}
+
+.text-base {
+    font-size: 1rem; /* 16px */
+}
+
+@media (min-width: 768px) {
+    .md-text-lg {
+        font-size: 1.125rem; /* 18px */
+    }
+}
+
+.mt-6 {
+    margin-top: 1.5rem; /* 24px */
+}
+
+.flex {
+    display: flex;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.relative {
+    position: relative;
+}
+
+.h-14 {
+    height: 3.5rem; /* 56px */
+}
+
+.w-14 {
+    width: 3.5rem; /* 56px */
+}
+
+.overflow-hidden {
+    overflow: hidden;
+}
+
+.header-fix{
+    margin-top: -60px;
+}
+
+@media(min-width:768px){
+    .header-fix{
+        margin-top: 100px;
+    }
+}
+
+@media(min-width:1024px){
+    .header-fix{
+        margin-top: 0px;
+    }
+}
+
+.rounded-full {
+    border-radius: 9999px;
+}
+
+.object-cover {
+    object-fit: contain;
+}
+
+.ml-4 {
+    margin-left: 1rem;
+    margin-bottom: -20px;
+}
+
+.text{
+    font-size: 16px;
+    margin-bottom: 2px;
+}
+
+.font-bold {
+    font-weight: 700;
+}
+
+.text-sm{
+    font-size: 14px;
+}
+
+.py-16 {
+    padding-top: 0rem;
+    padding-bottom: 4rem;
+}
+
+@media (min-width: 768px) { /* Medium screens and up */
+    .md-py-24 {
+        padding-top: 0rem;
+        padding-bottom: 6rem;
+    }
+}
+
+.container {
+    width: 100%;
+    max-width: 100%; /* Ensures responsiveness */
+}
+
+@media (min-width: 640px) { /* Small screens */
+    .container {
+        max-width: 640px;
+    }
+}
+
+@media (min-width: 768px) { /* Medium screens */
+    .container {
+        max-width: 768px;
+    }
+}
+
+@media (min-width: 1024px) { /* Large screens */
+    .container {
+        max-width: 1024px;
+    }
+}
+
+@media (min-width: 1280px) { /* Extra large screens */
+    .container {
+        max-width: 1280px;
+    }
+}
+
+@media (min-width: 1536px) { /* 2XL screens */
+    .container {
+        max-width: 1536px;
+    }
+}
+
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.mb-12 {
+    margin-bottom: 3rem; /* 48px */
+}
+
+.text-center {
+    text-align: center;
+}
+
+.mb-4 {
+    margin-bottom: 1rem; /* 16px */
+}
+
+/* Custom responsive font size for text-responsive-4xl */
+.text-responsive-4xl {
+    font-size: 2.25rem; /* 36px default */
+    line-height: 2.5rem; /* 40px default */
+}
+
+@media (min-width: 768px) { /* Medium screens (md) */
+    .text-responsive-4xl {
+        font-size: 3rem; /* 48px */
+        line-height: 3.5rem; /* 56px */
+    }
+}
+
+@media (min-width: 1024px) { /* Large screens (lg) */
+    .text-responsive-4xl {
+        font-size: 3.75rem; /* 60px */
+        line-height: 4.25rem; /* 68px */
+    }
+}
+
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.max-w-2xl {
+    max-width: 42rem; /* 672px */
+}
+
+.text-base {
+    font-size: 1rem; /* 16px */
+    line-height: 1.5rem; /* 24px */
+}
+
+@media (min-width: 768px) { /* Medium screens (md) */
+    .text-lg {
+        font-size: 1.125rem; /* 18px */
+        line-height: 1.75rem; /* 28px */
+    }
+}
+
+.grid {
+    display: grid;
+}
+
+.gap-6 {
+    gap: 1.5rem; /* 24px */
+}
+
+@media (min-width: 768px) { /* Medium screens (md) */
+    .md-grid-cols-2 {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (min-width: 1024px) { /* Large screens (lg) */
+    .lg-gap-8 {
+        gap: 2rem; /* 32px */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+

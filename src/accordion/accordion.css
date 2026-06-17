@@ -1,0 +1,203 @@
+/* Section Styling */
+.accordion-section {
+    text-align: center;
+    padding: 4rem 1rem; /* Equivalent to py-16 px-4 */
+    margin-top: -5rem; /* Equivalent to -mt-20 */
+    color: #1d2855;
+  }
+  
+  @media (min-width: 1024px) {
+    .accordion-section {
+      margin-top: 0; /* lg:-mt-0 */
+    }
+  }
+  
+  /* Container Styling */
+  .accordion-container {
+    background-color: #f9fafb; /* Equivalent to bg-gray-50 */
+    padding-top: 5rem ; /* Equivalent to py-32 */
+    border-radius: 2rem; /* Equivalent to rounded-4xl */
+    margin-top: -80px;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+  }
+
+  @media(min-width:768px){
+    .accordion-container{
+      margin-top: -50px;
+      margin-bottom: -100px;
+    }
+  }
+
+  @media(min-width: 1024px){
+    .accordion-container{
+        margin-top: -130px;
+        margin-bottom: -180px;
+        padding: 8rem 0;
+    }
+  }
+  
+  /* Title */
+  .accordion-title {
+    font-size: 2.5rem; /* Equivalent to text-responsive-4xl */
+    margin-bottom: 3rem; /* Equivalent to mb-12 */
+    margin-top: -30px;
+  }
+  
+  /* Filter Buttons */
+  .filter-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.75rem; /* Equivalent to gap-3 */
+    margin-bottom: 4rem; /* Equivalent to mb-16 */
+  }
+  
+  .filter-button {
+    padding: 0.625rem 1.5rem; /* Equivalent to px-6 py-2.5 */
+    border-radius: 9999px; /* Equivalent to rounded-full */
+    font-weight: 500; /* Equivalent to font-medium */
+  }
+  
+  .filter-button.primary {
+    background-color: #00d6dd;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Equivalent to shadow-3xl */
+    color: #1a1f36;
+  }
+  
+  .filter-button.secondary {
+    border: 1px solid #e5e7eb; /* Equivalent to border */
+    color: #4b5563; /* Equivalent to text-gray-600 */
+    background-color: transparent;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .filter-button.secondary:hover {
+    background-color: #f9fafb; /* Equivalent to hover:bg-gray-50 */
+  }
+  
+  /* Scholarship List */
+  .scholarship-list {
+    margin-top: -2rem; /* Equivalent to -mt-16 */
+    display: flex;
+    flex-direction: column;
+    gap: 4rem; /* Equivalent to space-y-4 */
+    width: 100%;
+  }
+
+  @media(min-width:768px){
+     .scholarship-list{
+       margin-top: 150px;
+     }
+  }
+
+  /* @media(min-width:768px){
+    .scholarship-list{
+      width: 80%;
+      margin: 'auto';
+    }
+  } */
+
+  @media(min-width:1024px){
+    .scholarship-list{
+      width: 90%;
+      margin: auto;
+      margin-top: 70px;
+    }
+  }
+
+  @media(min-width:1280px){
+    .scholarship-list{
+      width: 85%;
+      margin: auto;
+      margin-top: 70px;
+    }
+  }
+  
+  /* Pagination Controls */
+  .pagination-controls {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1rem; /* Equivalent to gap-4 */
+    margin-top: 2rem; /* Equivalent to mt-8 */
+    margin-right: 2rem; /* Equivalent to mr-8 */
+  }
+  
+  .pagination-button {
+    padding: 0.5rem; /* Equivalent to p-2 */
+    border-radius: 0.5rem; /* Equivalent to rounded-lg */
+    border: 1px solid #e5e7eb; /* Equivalent to border */
+    background-color: transparent;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .pagination-button:hover {
+    background-color: #f9fafb; /* Equivalent to hover:bg-gray-50 */
+  }
+  
+  /* Pagination Text */
+  .pagination-text {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .pagination-text span {
+    font-weight: 500;
+  }
+  
+  .pagination-text .text-muted {
+    color: #9ca3af; /* Equivalent to text-gray-400 */
+  }
+  
+  /* FAQ Section */
+  .faq-section {
+    padding: 1rem; /* Equivalent to px-4 */
+    background-color: #f7f7f9;
+    border-radius: 1rem; /* Equivalent to rounded-2xl */
+  }
+
+  @media(min-width: 1024px){
+    .faq-section {
+        height: 730px;
+    }
+  }
+
+
+  @media(min-width: 1280px){
+    .faq-section {
+        height: 630px;
+    }
+  }
+  
+  /* FAQ Grid */
+  .faq-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem; /* Equivalent to gap-12 */
+  }
+  
+  @media (min-width: 768px) {
+    .faq-grid {
+      grid-template-columns: repeat(2, 1fr); /* Equivalent to md:grid-cols-2 */
+    }
+  }
+  
+  /* FAQ Image */
+  .faq-image-container {
+    position: relative;
+  }
+  
+  .faq-image {
+    position: relative;
+    z-index: 10;
+    object-fit: cover;
+  }
+
+  /* @media(min-width:1024px){
+    .faq-image{
+        height: 700px;
+    }
+  } */
+  

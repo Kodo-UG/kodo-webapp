@@ -1,0 +1,38 @@
+/* .card.notSelected {
+    background: white;
+    display: flex;
+    cursor: pointer;
+    transition: "background-color 0.3s ease-in-out";
+    max-width: 10rem;
+    border-radius: 15px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2) ;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 12rem;
+    
+  }
+  .card.notSelected:hover{
+  border: 2px solid #125875;
+    transform: translate(5px, 5px);
+  }
+  
+  .card.selected {
+    background: #032E3F;
+    display: flex;
+    cursor: pointer;
+    transition: "background-color 0.3s ease-in-out";
+    max-width: 10rem;
+    border-radius: 15px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2) ;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 12rem;
+    border: 2;
+    color: white;
+    
+  
+  }
+  
+   */

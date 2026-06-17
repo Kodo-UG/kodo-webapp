@@ -1,0 +1,136 @@
+/* ScholarshipDetails.css */
+
+/* Root container styles */
+.scholarship-details-container {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding-left: 2rem;
+    margin-left: 5rem;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    height: 100%;
+    top: 3rem;
+  }
+  
+  /* Header styles */
+  .header-container {
+    height: 8rem;
+    color: #1c2755;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+  }
+  
+  .header-content {
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    margin-top: 1rem;
+  }
+  
+  .header-text {
+    margin-top: 0;
+    font-weight: bold;
+    font-size: 1.9rem;
+    font-family: 'Poppins';
+    letter-spacing: 2px;
+  }
+  
+  .bookmark-icon {
+    height: 20px;
+    width: 20px;
+    font-weight: bolder;
+  }
+  
+  /* Card body styles */
+  .card-body {
+    padding: 1rem;
+    width: 60%;
+    /* marginLeft: 4rem; */
+    justify-content: center;
+  }
+  
+  .card-content {
+    height: 6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .card-content-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .card-content-text {
+    margin-bottom: 1rem;
+  }
+  
+  .card-award {
+    margin-top: 0;
+    font-weight: bold;
+    color: #125875;
+    font-size: 1.5rem;
+    font-family: 'Poppins';
+    letter-spacing: 2px;
+  }
+  
+  .card-deadline {
+    margin-top: 0;
+    font-weight: bold;
+    color: #125875;
+    line-height: 20px;
+    font-size: 1.5rem;
+    font-family: 'Poppins';
+    letter-spacing: 2px;
+  }
+  
+  .card-effort {
+    margin-top: -1rem;
+  }
+  
+  /* Apply button styles */
+  .apply-button {
+    text-align: center;
+    margin-top: 1rem;
+    width: 100%;
+    height: 6rem;
+    color: white;
+    font-weight: bolder;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+  }
+  
+  .apply-button-link {
+    background-color: #EB1E5E;
+    border: none;
+    color: white;
+    padding: 1rem;
+    width: 100%;
+    border-radius: 5px;
+    font-weight: bolder;
+    font-size: 16px;
+  }
+  
+  /* About section styles */
+  .about-heading {
+    font-weight: 600;
+    font-size: 2rem;
+    letter-spacing: 1px;
+    text-align: left;
+    color: #1c2755;
+  }
+  
+  .scrollable-container {
+    color: #4e4b66;
+    text-align: justify;
+    letter-spacing: 1px;
+    font-size: 19px;
+  }
+  

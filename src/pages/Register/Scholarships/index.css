@@ -1,0 +1,23 @@
+.selectr{
+  border-radius: 10px;
+  width: 30rem;
+  padding:10px;
+  transition:box-shadow 0.3s ease-in-out ;
+  font: size 16px;
+  color:#333;
+  background-color: #fff;
+}
+
+
+
+@media (max-width:756px){
+    .selectr{
+        border-radius: 10px;
+        width: 25rem;
+        padding:10px;
+        transition:box-shadow 0.3s ease-in-out ;
+        font: size 13px;
+        color:#333;
+        background-color: #fff;
+      }
+}

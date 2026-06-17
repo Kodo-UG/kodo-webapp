@@ -1,0 +1,79 @@
+/* Base styles for all screens */
+.parent {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    gap: 0px;
+    /* background-color: pink; */
+    min-height: 100vh;
+  }
+  
+  .child {
+    /* background-color: blue; */
+  }
+  
+  .child1 {
+    grid-row: span 3;
+  }
+  .child2{
+    border-bottom-left-radius: 60%;
+    border-bottom-right-radius: 60%;
+    width:"100%"
+  }
+  
+  .subParent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+  
+  .subChild {
+    /* background-color: brown; */
+    height: 75%;
+    width: 25%;
+    margin: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Responsive styles for screens narrower than 768px */
+  @media (max-width: 768px) {
+    .subParent{
+        flex-direction: column;
+      
+    }
+    .subChild{
+        width: 75%;
+        font-weight: bold;
+        font-size: larger;
+    }
+    .child2{
+        border-bottom-left-radius: 0%;
+        border-bottom-right-radius: 0%;
+      }
+      .parent {
+        margin-top: 4rem;
+      }
+
+  }
+  
+  /* Responsive styles for screens narrower than 480px */
+  @media (max-width: 480px) {
+    .subParent{
+        flex-direction: column;
+        width: 100%;
+    }
+    .subChild{
+        width: 75%;
+    }
+    .child2{
+        border-bottom-left-radius: 0%;
+        border-bottom-right-radius: 0%;
+      }
+      .parent {
+        margin-top: 4rem;
+      }
+  }
+  

@@ -1,0 +1,122 @@
+.about-container {
+  min-height: 100vh;
+  background-color: white;
+}
+
+.about-main {
+  padding-top: 4rem;
+  padding-bottom: 5rem;
+}
+
+@media (min-width: 768px) {
+  .about-main {
+    padding-top: 6rem;
+    padding-bottom: 10rem;
+  }
+}
+
+.about-spacer {
+  height: 60px;
+}
+
+/* Main Container */
+.about-about-container {
+  background-color: #EEEFF7;
+  display: flex;
+  flex-direction: column;
+  gap: 8rem;
+  border-top-right-radius: 16px;
+  border-top-left-radius: 16px;
+  position: relative;
+  padding-top: 2rem;
+}
+
+@media (min-width: 768px) {
+  .about-about-container{
+    gap: 15rem;
+    border-top-right-radius: 32px;
+    border-top-left-radius: 32px;
+    margin-top: 0;
+  }
+}
+
+@media(min-width: 1024px){
+  .about-about-container{
+    top: -120px;
+  }
+}
+
+/* Video Section */
+.about-about-video-section {
+  margin-top: 2rem;
+}
+
+@media (min-width: 768px) {
+  .about-about-video-section {
+    margin-top: 0;
+  }
+}
+
+/* Content Section */
+.about-about-content-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10rem;
+  background-color: white;
+  border-top-right-radius: 16px;
+  border-top-left-radius: 16px;
+  padding-top: 10rem;
+  padding-bottom: 3rem;
+}
+
+@media (min-width: 768px) {
+  .about-about-content-section {
+    gap: 20rem;
+    border-top-right-radius: 32px;
+    border-top-left-radius: 32px;
+    padding-top: 20rem;
+    padding-bottom: 5rem;
+  }
+}
+
+/* Content Box */
+.about-about-content-box {
+  display: flex;
+  flex-direction: column;
+  gap: 10rem;
+  border-radius: 16px;
+}
+
+@media (min-width: 768px) {
+  .about-about-content-box {
+    margin: 10rem 0;
+    border-radius: 32px;
+  }
+}
+
+/* Experience Section */
+.about-about-experience-section {
+  padding: 1rem;
+  margin-top: -200px;
+}
+
+@media (min-width: 768px) {
+  .about-about-experience-section {
+    padding: 0;
+  }
+}
+
+.custom-bg {
+  background-color: #EEEEF7;
+  border-radius: 16px; /* Equivalent to rounded-2xl */
+}
+
+@media (min-width: 768px) {
+  .custom-bg {
+    border-radius: 32px; /* Equivalent to md:rounded-4xl */
+  }
+}
+
+
+
+

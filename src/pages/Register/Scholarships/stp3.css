@@ -1,0 +1,40 @@
+
+  .text:hover{
+     color: red;
+  }
+@media (max-width: 840px) {
+  .text{
+     font-size: 0.875rem;
+  }
+  .text{
+     font-size: 0.875rem;
+  }
+  p{
+     font-size: 0.875rem;
+  }
+  .selections-contai {
+    min-width: 20rem;
+
+   
+  }
+
+  .icon {
+    visibility: "hidden";
+  }
+
+  .dropdown-containe button div:first-child {
+    margin-bottom: 10px;
+  }
+
+  .dropdown-lis .option-butto {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 600px) {
+  .searchDiv{
+     width: 100%;
+  }
+
+
+}

@@ -1,0 +1,27 @@
+import { useEffect, useState } from "react";
+import { io } from "socket.io-client";
+
+interface Notification {
+    message: string;
+    userId: string;
+  }
+  
+
+const socket = io("http://localhost:4000/api/v1/user/notifications"); // Replace with your actual backend URL
+
+export const useNotifications = () => {
+    const [notifications, setNotifications] = useState<Notification[]>([]);
+
+//   useEffect(() => {
+//     // Listen for real-time notifications from the backend
+//     socket.on("new-notification", (notification) => {
+//       setNotifications((prev) => [notification, ...prev]); // Add new notifications at the top
+//     });
+
+//     return () => {
+//       socket.off("new-notification"); // Cleanup on unmount
+//     };
+//   }, []);
+
+  return { notifications };
+};

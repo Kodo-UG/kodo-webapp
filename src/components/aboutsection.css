@@ -1,0 +1,216 @@
+.about-section-container {
+    position: relative;
+  }
+  
+  .about-section-bg {
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    background-color: var(--bg-kodo-light);
+    width: 100%;
+    height: 8rem;
+  }
+  
+  .about-section-content {
+    margin-top: -8rem;
+    padding-bottom: 8rem;
+  }
+  
+  .about-section-box {
+    background-color:#00D6DD ;
+    border-radius: 48px;
+    padding: 20px;
+    margin-top: -240px;
+  }
+
+  @media (max-width: 1024px) {
+    .about-section-box {
+      margin-top: -250px;
+    }
+  }
+  
+  .about-section-grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 0.5rem;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  
+  .about-section-text {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    grid-column: span 12;
+  }
+  
+  @media (min-width: 1024px) {
+    .about-section-text {
+      grid-column: span 7;
+    }
+  }
+  
+  .about-section-title {
+    /* font-size: 10px; */
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: #1D2855;
+  }
+
+  /* @media(min-width:400px){
+    .about-section-title{
+      font-size: 40px;
+    }
+  } */
+
+  @media(min-width: 768px){
+    .about-section-title{
+      font-size:53px
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .about-section-title {
+      text-align: start;
+      width: 400px;
+      font-size:53px
+    }
+  }
+
+  @media (max-width: 600px) {
+    .about-section-title {
+      font-size: 30px;
+    }
+  }
+  
+  .about-section-description {
+    color: #1D2855;
+    font-size: 14px;
+    margin-bottom: 1.5rem;
+    line-height: 1;
+    text-align: center;
+  }
+  
+  @media (min-width: 1024px) {
+    .about-section-description {
+      text-align: start;
+      width: 400px;
+    }
+  }
+  
+  .about-section-button {
+    border-radius: 9999px;
+    padding: 0.75rem 1.25rem;
+    font-size: 1.125rem;
+    box-shadow: 0 5px 4px rgba(0, 0, 0, 0.7);
+    background-color: white;
+    color: #1D2855;
+  }
+  
+  .about-section-image-container {
+    position: relative;
+    display: flex;
+    padding: 1rem 0;
+    align-items: center;
+    justify-content: center;
+    grid-column: span 12;
+  }
+  
+  @media (min-width: 1024px) {
+    .about-section-image-container {
+      grid-column: span 4;
+      justify-content: flex-end;
+    }
+  }
+  
+  .about-section-image {
+    border-radius: 32px;
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+  }
+  
+  @media (min-width: 1024px) {
+    .about-section-image {
+      width: 500px;
+      height: 300px;
+    }
+  }
+  
+  .about-section-experience {
+    position: absolute;
+    top: 25%;
+    right: -25%;
+    background-color: #EC1B5C;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 50%;
+    border-radius: 1rem;
+    font-weight: 600;
+  }
+
+  @media (max-width: 600px) { /* md breakpoint */
+    .about-section-experience {
+      right: -20%;
+    }
+  }
+  
+  .about-section-experience a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .about-section-experience span {
+    font-weight: 800;
+    font-size: 3rem;
+  }
+  
+  .about-section-experience .subtext {
+    font-size: 1rem;
+  }
+  
+  .about-section {
+    max-width: 1200px; /* Equivalent to Tailwind's container */
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1.5rem; /* md:px-6 equivalent */
+    padding-right: 1.5rem;
+  }
+  
+  @media (min-width: 768px) { /* md breakpoint */
+    .about-section {
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
+  }
+
+  .about-section-button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  @media (min-width: 1024px) { /* lg breakpoint */
+    .about-section-button-container {
+      display: block;
+    }
+  }
+
+  .about-section-image-wrapper {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  @media (min-width: 1024px) { /* lg breakpoint */
+    .about-section-image-wrapper {
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+  

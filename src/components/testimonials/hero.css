@@ -1,0 +1,47 @@
+.py-4 {
+    padding-top: 1rem;  /* 16px */
+    padding-bottom: 1rem; /* 16px */
+}
+
+.relative {
+    position: relative;
+}
+
+.min-h {
+    min-height: 200px;
+}
+
+@media (min-width: 1024px) {
+    .lg-min-h-500 {
+        min-height: 500px;
+    }
+}
+
+.img-fix{
+    margin-top: -20px;
+}
+
+@media(min-width:768px){
+    .img-fix{
+        margin-top: 100px;
+    }
+}
+
+@media(min-width: 1024px){
+    .img-fix{ 
+        margin-top: 0px;
+    }
+}
+
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.w-full {
+    width: 100%;
+}
+
+.object-contain {
+    object-fit: contain;
+}

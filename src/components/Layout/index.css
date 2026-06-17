@@ -1,0 +1,238 @@
+@media (max-width: 1000px){
+    .bt{
+       font-size: 1rem;
+    }
+    .logo{
+        height: 4rem;
+        width: 8rem;
+        margin-top: 1rem;
+    }
+
+    .h{
+        font-size: 2rem;
+        text-align: left;
+
+    }
+    .pr{
+        font-size: .9rem;
+    }
+    
+}
+
+@media (min-width: 795px){
+    .bt{
+       font-size: 1rem;
+    }
+    .logo{
+        height: 3rem;
+        width: 8rem;
+        margin-left: -2rem;
+    }
+
+    
+
+    
+}
+
+@media (max-width: 1099px){
+    .bt{
+        font-size: 1rem;
+    }
+    
+}
+
+.glass{
+background: rgba(255, 255, 255, 0.73);
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(3.2px);
+-webkit-backdrop-filter: blur(5.2px);
+border: 1px solid rgba(255, 255, 255, 0.83);
+padding: 1.188rem;
+}
+
+
+@media (min-width: 1099px){
+    .ul{
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 1199px){
+    .ul{
+        font-size: .8rem;
+    }
+}
+
+@media (min-width: 1500px){
+    .h{
+        font-size: 4rem;
+    }
+}
+
+
+
+@media  only screen and (max-width: 767px) {
+    /* your mobile styles here */
+    .footer {
+      display: flex;
+      flex-direction: column;
+    }
+    }
+    @media (max-width: 576px) {
+    .link-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-left: 10px;
+      padding-bottom: 20px;
+    }
+    
+    .link-list li {
+      flex: 0 0 48%;
+      margin-bottom: 10px;
+    }
+    .footer-social{
+     margin-left:0px;
+     padding-bottom: 28px;
+     padding-left: 13px;
+    }
+    .footer-widget{
+      margin-left: -15px;
+      margin-bottom: -10px;
+    }
+    .f-widget-title {
+      margin-top: -30px;
+      padding-bottom: 30px;
+    }
+}
+
+
+.mobile-menu-list li {
+    text-transform: capitalize;
+    padding-top: 0;
+    display: flex;
+    margin-bottom: 1px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: grey;
+    font-weight: 300; /* Make the font lighter */
+    justify-content: center;
+  }
+  
+  .mobile-btn {
+    background-color: #ffffff;
+    color: #000;
+    border: 2px solid #000;
+    height: auto;
+    width: 100%; /* Make the button full width */
+    text-align: center;
+    padding: 5px 5px 5px 5px;
+    margin-bottom: 1px;
+    margin-left: 8px;
+    margin-top: 20px;
+    border-radius: 80px;
+    display: block; /* Add display block */
+    margin-left: auto; /* Center the button */
+    margin-right: auto; /* Center the button */
+  }
+  
+  /* Update the second mobile-btn class */
+  .mobile-menu-list li:last-child a.mobile-btn {
+    background-color: #EB1E5E;
+    height: auto;
+    color: #ffffff;
+    width: 100%;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    margin-top: 30px;
+    margin-left: 8px;
+    border-radius: 80px;
+    text-align: center;
+  }
+  
+              .logo {
+      display: flex;
+      align-items: center;
+      margin-left: -70px; /* Set negative margin */
+  }
+  .header-area .second-menu .col-xl-6 {
+    display: flex;
+    justify-content: center;
+  }
+  .header-area .main-menu {
+    text-align: center;
+    margin-left: -80px;
+  }
+  @media (max-width: 700px) {
+    .logo {
+      margin-left: -8rem;
+    }
+    .login,
+    .second-header-btn {
+      display: none;
+    }
+    .mobile-menu {
+      display: block;
+      text-transform: lowercase;
+      top: 50px;
+      width: 100%;
+      right: 0;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    /* Hide mobile menu buttons on desktop */
+    #mobile-menu-buttons {
+      display: none;
+    }
+  
+  }
+  
+  @media (max-width: 767px) {
+      .has-sub.sub-menu {
+      display: none;
+    }
+    /* Show mobile menu buttons on mobile */
+    #mobile-menu-buttons {
+      display: block;
+      margin-top: 30px;
+      margin-bottom: 10px;
+    }
+  }
+  @media (max-width: 991px) {
+    .menu-area {
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+        margin-left: 0px;
+        margin-right: -5px;
+      }
+      .container {
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+      }
+    .mobile-menu-list {
+      height: 380px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .mobile-menu-list li {
+      text-transform: lowercase;
+      padding-top: 0;
+      margin-bottom: 1px;
+      padding-bottom: 0;
+      color: grey;
+    } 
+  
+  }
+  
+   @media (max-width: 991px) {
+    .second-menu {
+      width: 100%;
+      margin-left: 0;
+      margin-right: 0;
+    }
+  } 
+  
