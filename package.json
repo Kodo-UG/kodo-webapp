@@ -56,8 +56,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "deploy": "react-scripts build && scp -r ./build/* root@16.171.133.223:/var/www/kodo/html",
-    "vercel-build": "npm install --legacy-peer-deps && next build"
+    "deploy": "react-scripts build && scp -r ./build/* root@16.171.133.223:/var/www/kodo/html"
   },
   "eslintConfig": {
     "extends": [
