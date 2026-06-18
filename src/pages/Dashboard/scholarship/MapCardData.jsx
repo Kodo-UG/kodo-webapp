@@ -8,7 +8,7 @@ import {
 import InfiniteScroll from "react-infinite-scroll-component";
 import axios from "axios";
 import { BASE_URL } from "../../../constants/api";
-import { useHistory } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import truncateText from "../../../utils/truncate";
 
 const MapCardData = () => {
@@ -17,7 +17,7 @@ const MapCardData = () => {
   const [pageNumber, setPageNumber] = useState(1);
   const [hasMore, setHasMore] = useState(true);
 
-  const history = useHistory();
+  const navigate = useNavigate();
 
   const config = {
     headers: {
@@ -82,7 +82,7 @@ const MapCardData = () => {
     const data = {
       getJobs: false,
     };
-    history.push(`/details/${id}`, data);
+    navigate(`/details/${id}`, { state: data });
   };
 
   useEffect(() => {

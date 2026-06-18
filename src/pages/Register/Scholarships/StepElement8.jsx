@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./stepperElement.css";
 import { useDispatch, useSelector } from "react-redux";
 import { clearFormData, updateFormData } from "../../../toolkit/formReducer";
-import { useHistory } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import NavHeader from "../../../components/Layout/NavHeader";
 import { ClipLoader } from "react-spinners"; 
 import { Link } from "react-router-dom";
@@ -30,7 +30,7 @@ const validationSchema = Yup.object().shape({
 
 function StepElement8() {
   const formData = useSelector((state) => state.formData);
-  const history = useHistory();
+  const navigate = useNavigate();
   const [loading, setLoading] = useState(false);
   const [gender, setGender] = useState("");
   const [showPassword, setShowPassword] = useState(false);
@@ -88,7 +88,7 @@ function StepElement8() {
       if (res.data.id) {
         displaySuccessMessage("Registration successful ");
         clearFormData();
-        history.push("/signin");
+        navigate("/signin");
       } else {
         displayErrorMessage(res.data.message);
       }

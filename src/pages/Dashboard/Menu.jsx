@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { BsArrowLeft } from "react-icons/bs";
 import { useMediaQuery } from "@uidotdev/usehooks";
 import axios from "axios";
-import { useHistory } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { useQueryClient } from "react-query";
 import { useDispatch } from "react-redux";
 import { clearScholarships } from "../../toolkit/scholarshipReducer";
@@ -17,7 +17,7 @@ const Menu = ({ setShowContent }) => {
     const [activeButton, setActiveButton] = useState(null);
     const [data, setData] = useState();
     const [sidebarVisible, setSidebarVisible] = useState(true);
-    const history = useHistory();
+    const navigate = useNavigate();
     const queryClient = useQueryClient(); // Get the queryClient instance
     const dispatch = useDispatch();
     const config = {
@@ -90,7 +90,7 @@ const Menu = ({ setShowContent }) => {
         dispatch(clearFormData());
         dispatch(clearJobData());
         queryClient.clear();
-        history.push("/login");
+        navigate("/login");
     };
     return (
         <div>

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useHistory, useLocation } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 import { displayErrorMessage, displaySuccessMessage } from "../../utils/Toast";
 import { useFormik } from "formik";
 import * as Yup from "yup";
@@ -11,7 +11,7 @@ import logologin from "../../assets/logo-login.jpg";
 import ClipLoader from "react-spinners/ClipLoader";
 
 export default function ChangePassword() {
-  const history = useHistory();
+  const navigate = useNavigate();
   const location = useLocation();
   const email = location.state?.email || "";
 
@@ -50,7 +50,7 @@ export default function ChangePassword() {
 
         if (data.statusCode == 200) {
           displaySuccessMessage("Password changed successfully");
-          history.push("/login");
+          navigate("/login");
         } else {
           setLoading(false);
           displayErrorMessage("Something went wrong");
@@ -137,7 +137,7 @@ export default function ChangePassword() {
             </button>
 
             <div className="signup-prompt">
-              <div className="signup-link" style={{ cursor: "pointer" }} onClick={() => history.goBack()}>
+              <div className="signup-link" style={{ cursor: "pointer" }} onClick={() => navigate(-1)}>
                 Back to login
               </div>
             </div>

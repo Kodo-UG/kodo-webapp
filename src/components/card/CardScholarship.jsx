@@ -1,7 +1,7 @@
 import React from "react";
 import { IoIosArrowForward } from "react-icons/io";
 import { Card } from "react-bootstrap";
-import { useHistory } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { CiLock } from "react-icons/ci";
 
 
@@ -17,13 +17,13 @@ const CardScholarship = ({
 	const date = new Date(deadline);
 	const formattedDate = date.toLocaleDateString();
 
-	const history = useHistory();
+	const navigate = useNavigate();
 
 	const destinationPath = () => {
 		if (path === "/jobs") {
-			history.push("/payjobs");
+			navigate("/payjobs");
 		} else {
-			history.push("/payment");
+			navigate("/payment");
 		}
 	};
 

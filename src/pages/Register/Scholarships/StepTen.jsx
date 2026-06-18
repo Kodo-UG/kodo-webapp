@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { clearFormData, updateFormData } from "../../../toolkit/formReducer";
 import api from "../../../api/apiClient";
 import { Input } from "antd";
-import { useHistory } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import {
 	displayErrorMessage,
 	displaySuccessMessage
@@ -16,7 +16,7 @@ const StepTen = ({ nextStep, prevStep }) => {
 	const [loading, setLoading] = useState(false);
 	const [code, setCode] = useState(null);
 
-	const history = useHistory();
+	const navigate = useNavigate();
 
 	const handleCodeChange = (e) => {
 		const { name, value } = e.target;
@@ -32,7 +32,7 @@ const StepTen = ({ nextStep, prevStep }) => {
 			});
 			if (response.status == "201") {
 				displaySuccessMessage("Account verified successfully");
-				history.push("/signin");
+				navigate("/signin");
 			} else {
 				displayErrorMessage("Invalid code ");
 			}

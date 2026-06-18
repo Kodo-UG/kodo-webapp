@@ -1,7 +1,7 @@
 import React, { useState, useMemo } from "react";
 import "../stepperElement.css";
 import { useDispatch, useSelector } from "react-redux";
-import { useHistory } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { countries } from "../../../../constants/countries";
 import { Link } from "react-router-dom";
 import { displayErrorMessage } from "../../../../utils/Toast";
@@ -24,7 +24,7 @@ function StepperElementThree() {
 
 	const dispatch = useDispatch();
 	const formData = useSelector((state) => state.formData);
-	const history = useHistory();
+	const navigate = useNavigate();
 	const [country, setCountry] = useState("");
 	const [preferedCountry, setPreferedCountry] = useState("");
 	const [data, setData] = useState([]);
@@ -76,7 +76,7 @@ function StepperElementThree() {
 		try {
 			await validationSchema.validate(formData, { abortEarly: false });
 
-			history.push("/sportsfinal");
+			navigate("/sportsfinal");
 		} catch (validationErrors) {
 			const errorMessages = validationErrors.inner.map(
 				(error) => error.message

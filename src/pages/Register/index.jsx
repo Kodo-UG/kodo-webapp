@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useDispatch } from "react-redux";
-import { useParams, useHistory } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import { updateFormData } from "../../toolkit/formReducer";
 import axios from "axios";
 import { BASE_URL } from "../../constants/api";
@@ -16,7 +16,7 @@ const config = {
 };
 
 const FindScholarship = () => {
-  const history = useHistory();
+  const navigate = useNavigate();
   const isSm = useMediaQuery("only screen and (max-width : 700px)");
   const dispatch = useDispatch();
   const [freeScholarships, setFreeScholarships] = useState([]);
@@ -91,7 +91,7 @@ const FindScholarship = () => {
   };
 
   const handleRoute = () => {
-    history.push("/stepper");
+    navigate("/stepper");
   };
 
   return (

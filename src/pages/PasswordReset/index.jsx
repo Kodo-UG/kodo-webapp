@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link, useHistory } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { displayErrorMessage, displaySuccessMessage } from "../../utils/Toast";
 import axiosInstance from "../../api/axiosInstance";
 import { useMediaQuery } from "@uidotdev/usehooks";
@@ -8,7 +8,7 @@ import "../Login/custom.css";
 
 export default function PasswordReset() {
 	const [password, setPassword] = useState();
-	const history = useHistory();
+	const navigate = useNavigate();
 	const isSm = useMediaQuery("only screen and (max-width : 700px)");
 	const params = useParams();
 
@@ -32,7 +32,7 @@ export default function PasswordReset() {
 			console.log(data);
 			if (data.status == "200") {
 				displaySuccessMessage("Passsword changed successfully");
-				history.push("/signin");
+				navigate("/signin");
 			} else {
 				displayErrorMessage("Password Reset failed");
 			}

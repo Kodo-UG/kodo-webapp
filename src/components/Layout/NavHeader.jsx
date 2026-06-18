@@ -6,7 +6,7 @@ import { IoIosCloseCircleOutline } from "react-icons/io";
 import './NavHeader.css';
 import logo from '../../assets/logo.png';
 import {useLocation} from 'react-router-dom';
-import {useHistory} from 'react-router-dom';
+import {useNavigate} from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { useQueryClient } from 'react-query';
 import { clearFormData } from "../../toolkit/formReducer";
@@ -68,7 +68,7 @@ export default function NavHeader() {
     }
   }, []);
 
-  const history = useHistory();
+  const navigate = useNavigate();
   const queryClient = useQueryClient(); // Get the queryClient instance
   const dispatch = useDispatch();
 
@@ -81,7 +81,7 @@ export default function NavHeader() {
       dispatch(clearJobData());
       queryClient.clear();
       dispatch(clearScholarships());
-      history.push("/login");
+      navigate("/login");
     };
  
 

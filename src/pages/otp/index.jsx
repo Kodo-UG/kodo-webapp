@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link, useHistory} from "react-router-dom";
+import { Link, useNavigate} from "react-router-dom";
 import { displayErrorMessage, displaySuccessMessage } from "../../utils/Toast";
 import { BiEnvelope } from "react-icons/bi";
 import axiosInstance from "../../api/axiosInstance";
@@ -27,7 +27,7 @@ export default function Otp() {
         );
     
 
-    const history = useHistory();
+    const navigate = useNavigate();
     const handleChange = (setState) => (e) => {
         setState(e.target.value);
     };
@@ -47,10 +47,7 @@ export default function Otp() {
                 displaySuccessMessage(
                     `otp verification successfull`
                 );
-                history.push({
-                    pathname: '/changepassword',
-                    state: {email}
-                })
+                navigate('/changepassword', { state: {email} })
             } else {
                 setLoading(false);
                 displayErrorMessage("Password reset");
@@ -139,7 +136,7 @@ export default function Otp() {
                                         style={{
                                             cursor: 'pointer'
                                         }}
-                                        onClick={() => history.goBack()}
+                                        onClick={() => navigate(-1)}
                                     >
                                         Back to login
                                     </div>

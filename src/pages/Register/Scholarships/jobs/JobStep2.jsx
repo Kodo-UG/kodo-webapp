@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import "../stepperElement.css";
 import { useDispatch, useSelector } from "react-redux";
 import { updateJobData } from "../../../../toolkit/jobReducer";
-import { useHistory } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 import { Link } from "react-router-dom";
 import { displayErrorMessage } from "../../../../utils/Toast";
@@ -227,7 +227,7 @@ function JobStep2() {
 	const jobData = useSelector((state) => state.jobData);
 	const [country, setCountry] = useState("");
 
-	const history = useHistory();
+	const navigate = useNavigate();
 
 	// const handleCountryChange = (e) => {
 	// 	const { name, value } = e.target;

@@ -1,7 +1,7 @@
 import React from "react";
 import Footer from "../Dashboard/Footer";
 import { useMediaQuery } from "@uidotdev/usehooks";
-import { useHistory } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import axiosInstance from "../../api/axiosInstance";
 import { useMemo } from "react";
@@ -20,10 +20,10 @@ const Favorite = () => {
     "only screen and (min-width : 1250px) and (max-width : 1300px)"
   );
 
-  const history = useHistory();
+  const navigate = useNavigate();
 
   const handleRoute = (id) => {
-    history.push(`/details/${id}`);
+    navigate(`/details/${id}`);
   };
 
   const fetchFavorites = async () => {
@@ -143,7 +143,7 @@ const Favorite = () => {
             }}
           >
             <p
-              onClick={() => history.push("/scholars")}
+              onClick={() => navigate("/scholars")}
               style={{
                 fontSize: "14px",
                 letterSpacing: "1.6px",

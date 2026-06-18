@@ -1,5 +1,5 @@
 import { FaAward, FaRegCalendarAlt } from "react-icons/fa";
-import { useHistory } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { IoIosArrowForward } from "react-icons/io";
 import { useMediaQuery } from "@uidotdev/usehooks";
 import { CiLock } from "react-icons/ci";
@@ -16,7 +16,7 @@ const LargeCardNotPaid = ({
 }) => {
 	const date = new Date(formatDate);
 	const formattedDate = date.toLocaleDateString();
-	const history = useHistory();
+	const navigate = useNavigate();
 
 	const isSm = useMediaQuery("only screen and (max-width : 700px)");
 	const isMd = useMediaQuery(
@@ -31,9 +31,9 @@ const LargeCardNotPaid = ({
 
 	const destinationPath = () => {
 		if (path === "/jobs") {
-			history.push("/payjobs");
+			navigate("/payjobs");
 		} else {
-			history.push("/payment");
+			navigate("/payment");
 		}
 	};
 

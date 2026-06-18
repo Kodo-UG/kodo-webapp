@@ -3,12 +3,12 @@ import React from "react";
 import axiosInstance from "../../../api/axiosInstance";
 import { useEffect } from "react";
 import { useState } from "react";
-import { useHistory } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const TitleContent = () => {
 	const [data, setData] = useState([]);
 	const [loading, setLoading] = useState(false);
-	const history = useHistory();
+	const navigate = useNavigate();
 
 	const isSm = useMediaQuery("only screen and (max-width : 700px)");
 
@@ -66,7 +66,7 @@ const TitleContent = () => {
 									cursor: "pointer",
 									fontSize: "1.2rem"
 								}}
-								onClick={() => history.push("/jobStep1")}
+								onClick={() => navigate("/jobStep1")}
 							>
 								Register for jobs
 							</div>

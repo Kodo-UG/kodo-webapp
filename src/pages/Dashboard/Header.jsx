@@ -1,5 +1,5 @@
 import React, { useState,useEffect,useRef } from "react";
-import { Link, useHistory } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { Dropdown, Space } from "antd";
 import { UserOutlined, LogoutOutlined } from "@ant-design/icons";
 import { HiMenuAlt1 } from "react-icons/hi";
@@ -21,7 +21,7 @@ import "react-toastify/dist/ReactToastify.css";
 
 
 const MyHeader = ({ setShowContent }) => {
-	const history = useHistory();
+	const navigate = useNavigate();
 	const queryClient = useQueryClient(); // Get the queryClient instance
 	const [isPushMenuVisible, setPushMenuVisible] = useState(false);
 	const dispatch = useDispatch();
@@ -110,7 +110,7 @@ const MyHeader = ({ setShowContent }) => {
 		dispatch(clearJobData());
 		queryClient.clear();
 		dispatch(clearScholarships());
-		history.push("/login");
+		navigate("/login");
 	};
 
 	const items = [

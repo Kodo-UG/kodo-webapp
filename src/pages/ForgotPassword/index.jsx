@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link, useHistory} from "react-router-dom";
+import { Link, useNavigate} from "react-router-dom";
 import { displayErrorMessage, displaySuccessMessage } from "../../utils/Toast";
 import { BiEnvelope } from "react-icons/bi";
 import axiosInstance from "../../api/axiosInstance";
@@ -24,7 +24,7 @@ export default function ForgotPassword() {
 		);
 	
 
-	const history = useHistory();
+	const navigate = useNavigate();
 	const handleChange = (setState) => (e) => {
 		setState(e.target.value);
 	};
@@ -43,10 +43,7 @@ export default function ForgotPassword() {
 				displaySuccessMessage(
 					`otp code sent to ${email} to reset password`
 				);
-				history.push({
-					pathname: '/otp',
-					state: {email},
-				})
+				navigate('/otp', { state: {email} })
 			} else {
 				setLoading(false);
 				displayErrorMessage("Password reset");
@@ -137,7 +134,7 @@ export default function ForgotPassword() {
 										style={{
 											cursor: 'pointer'
 										}}
-										onClick={() => history.goBack()}
+										onClick={() => navigate(-1)}
 									>
 										Back to login
 									</div>

@@ -4,7 +4,7 @@ import axiosInstance from "../../api/axiosInstance";
 import { FaShare } from "react-icons/fa";
 import KodoImageLoader from "../../components/KodoImageLoader";
 import { useMediaQuery } from "@uidotdev/usehooks";
-import { useHistory } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import moment from "moment";
 import "./blog.css";
 import CommentForm from "./CommentForm";
@@ -28,7 +28,7 @@ const BlogDetails = () => {
     const isLg = useMediaQuery(
         "only screen and (min-width : 1250px) and (max-width : 1300px)"
     );
-    const history = useHistory();
+    const navigate = useNavigate();
 
     const getBlog = async () => {
         try {
@@ -346,7 +346,7 @@ const BlogDetails = () => {
                                         color: "#1c2755",
                                     }}
                                     onClick={() => {
-                                        history.push("/blog");
+                                        navigate("/blog");
                                     }}
                                 >
                                     Learn More

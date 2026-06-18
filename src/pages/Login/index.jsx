@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link, useHistory,useLocation } from "react-router-dom";
+import { Link, useNavigate,useLocation } from "react-router-dom";
 import { displayErrorMessage, displaySuccessMessage } from "../../utils/Toast";
 import "./custom.css";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -29,7 +29,7 @@ export default function Login() {
         setShowPassword((prevShowPassword) => !prevShowPassword);
     };
 
-    const history = useHistory();
+    const navigate = useNavigate();
 
     const handleChange = (setState) => (e) => {
         setState(e.target.value);
@@ -78,7 +78,7 @@ export default function Login() {
                     setLoading(false);
                 }, 2000);
                 
-                history.push("/scholars");
+                navigate("/scholars");
             } else {
                 displayErrorMessage(message);
             }

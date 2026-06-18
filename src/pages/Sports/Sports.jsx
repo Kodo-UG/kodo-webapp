@@ -1,7 +1,7 @@
 import React from "react";
 import { Carousel } from "react-bootstrap";
 import "./sports.css";
-import { Link, useHistory } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useMediaQuery } from "@uidotdev/usehooks";
 
 const Sports = () => {
@@ -16,7 +16,7 @@ const Sports = () => {
 		"only screen and (min-width : 1201px)"
 	);
 
-	const history = useHistory();
+	const navigate = useNavigate();
 	return (
 		<div>
 			<Carousel interval={9900} slide={true}>

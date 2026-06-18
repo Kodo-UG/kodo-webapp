@@ -4,10 +4,10 @@ import CardScholarshipSubscribed from "../../../components/card/CardScholarshipS
 import { BASE_URL } from "../../../constants/api";
 import axios from "axios";
 import InfiniteScroll from "react-infinite-scroll-component";
-import { useHistory } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const CombinedJobs = ({ path }) => {
-  const history = useHistory();
+  const navigate = useNavigate();
   const [data, setData] = useState([]);
   const [subscription, setSubscription] = useState(false);
   const [pageNumber, setPageNumber] = useState(1);
@@ -56,7 +56,7 @@ const CombinedJobs = ({ path }) => {
       const data = {
         getJobs: true,
       };
-      history.push(`/details/${id}`, data);
+      navigate(`/details/${id}`, { state: data });
     }
   };
 

@@ -1,12 +1,12 @@
 import React from "react";
 import { useMediaQuery } from "@uidotdev/usehooks";
-import { useHistory } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { useQuery } from "react-query";
 import { useDispatch } from "react-redux";
 import { clearScholarships } from "../../../toolkit/scholarshipReducer";
 
 const ShowTitle = () => {
-  const history = useHistory();
+  const navigate = useNavigate();
   const ifnx = JSON.parse(localStorage.getItem("userData"));
   const dispatch = useDispatch();
   const isSm = useMediaQuery("only screen and (max-width : 700px)");
@@ -16,7 +16,7 @@ const ShowTitle = () => {
 		localStorage.removeItem("token");
 		localStorage.removeItem("userData");
 		dispatch(clearScholarships());
-		history.push("/stepper");
+		navigate("/stepper");
 	};
 
 	return (

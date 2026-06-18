@@ -1,6 +1,6 @@
 import { useMediaQuery } from "@uidotdev/usehooks";
 import React from "react";
-import { Link } from "react-router-dom/cjs/react-router-dom.min";
+import { Link } from "react-router-dom";
 import logologin from '../../assets/logo-login.jpg'
 import './stepper.css';
 import { PiGraduationCap } from "react-icons/pi";
@@ -129,7 +129,7 @@ function StepperCard({ list }) {
                   marginLeft: '30%'
                 }}
               >
-                  <Link  to={{ pathname: "/signin", state: { ref: "scholarships" } }} className="mobile-cta-button">
+                  <Link  to="/signin" state={{ ref: "scholarships" }} className="mobile-cta-button">
                       Login →
                   </Link>
               </div>
@@ -188,7 +188,7 @@ function StepperCard({ list }) {
                   marginLeft: '30%'
                 }}
               >
-                  <Link  to={{ pathname: "/signin", state: { ref: "job" } }} className="mobile-cta-button">
+                  <Link  to="/signin" state={{ ref: "job" }} className="mobile-cta-button">
                       Login →
                   </Link>
               </div>

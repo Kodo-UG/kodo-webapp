@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { useMediaQuery } from "@uidotdev/usehooks";
-import { useHistory } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { useFlutterwave, closePaymentModal } from "flutterwave-react-v3";
 import useCurrencyConverter from "../../../utils/converter";
 import {
@@ -12,7 +12,7 @@ import { BASE_URL } from "../../../constants/api";
 
 const PaymentCardJobs = ({ data }) => {
 	const { details } = data;
-	const history = useHistory();
+	const navigate = useNavigate();
 	const [dataUser, setDataUser] = useState();
 
 	const isSm = useMediaQuery("only screen and (max-width : 700px)");
@@ -62,10 +62,10 @@ const PaymentCardJobs = ({ data }) => {
 
 			if (response.status == "201" && status == "successful") {
 				displaySuccessMessage("Subscription successful");
-				history.push("/scholars");
+				navigate("/scholars");
 			} else {
 				displayErrorMessage("Subscription failed try again later");
-				history.push("/scholars");
+				navigate("/scholars");
 			}
 		} catch (error) {
 			throw error;

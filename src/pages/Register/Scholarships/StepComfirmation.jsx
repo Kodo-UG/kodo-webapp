@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./stepperElement.css";
-import { useHistory } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 import {
 	displayErrorMessage,
@@ -16,7 +16,7 @@ function StepComfirmation() {
 	const [loading, setLoading] = useState(false);
 	const [code, setCode] = useState(null);
 
-	const history = useHistory();
+	const navigate = useNavigate();
 
 	const handleCodeChange = (e) => {
 		const { name, value } = e.target;
@@ -35,7 +35,7 @@ function StepComfirmation() {
 
 			if (response.status == "201") {
 				displaySuccessMessage(response.data.message);
-				history.push("/signin");
+				navigate("/signin");
 			} else {
 				displayErrorMessage("Invalid code ");
 			}

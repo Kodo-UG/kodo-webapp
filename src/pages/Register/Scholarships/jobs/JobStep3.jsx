@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "../stepperElement.css";
 import { useDispatch, useSelector } from "react-redux";
 import { updateJobData } from "../../../../toolkit/jobReducer";
-import { useHistory } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import DatePicker from "react-datepicker";
 import NavHeader from "../../../../components/Layout/NavHeader";
 import '../stepper8.css';
@@ -20,7 +20,7 @@ import { ClipLoader } from "react-spinners";
 function StepElement8() {
 	const jobData = useSelector((state) => state.jobData);
 	  const [showPassword, setShowPassword] = useState(false);
-	const history = useHistory();
+	const navigate = useNavigate();
 	const [loading, setLoading] = useState(false);
 
 	const [gender, setGender] = useState("");
@@ -73,13 +73,13 @@ function StepElement8() {
 
 			if (res.status == 200) {
 				displaySuccessMessage(res.data.message);
-				history.push("/signin");
+				navigate("/signin");
 				// nextStep();
 			}
 
 			if (res.status == 201) {
 				displaySuccessMessage(res.data.message);
-				history.push("/signin");
+				navigate("/signin");
 			}
 		} catch (error) {
 			displayErrorMessage("Failed to register");

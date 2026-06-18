@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./stepperElement.css";
 import { useDispatch } from "react-redux";
-import { Link, useHistory } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useMediaQuery } from "@uidotdev/usehooks";
 import { updateFormData } from "../../../toolkit/formReducer";
 import Footer from "../../../components/Layout/Footer";
@@ -52,7 +52,7 @@ function StepperElementFour() {
 	}
 
 	const dispatch = useDispatch();
-	const history = useHistory();
+	const navigate = useNavigate();
 	const [active, setActive] = useState("");
 
 	const isSm = useMediaQuery("only screen and (max-width : 700px)");
@@ -224,7 +224,7 @@ function StepperElementFour() {
 													backgroundColor: '#00D6DD',
 													color: '#1d2855'
 												}}
-												// onClick={() => history.push("/route1")}
+												// onClick={() => navigate("/route1")}
 											>
 												<span>Continue</span>
 												<svg

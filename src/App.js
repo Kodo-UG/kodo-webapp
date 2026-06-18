@@ -94,101 +94,61 @@ const App = () => {
             }
         >
             <Routes>
-                <Route exact path="/index" component={Index} />
-                <Route exact path="/signin" component={Signin} />
-                <Route exact path="/login/:userId" component={Login} />
-                <Route exact path="/payment-status" component={PaymentStatus} />
+                {/* Public routes without Layout */}
+                <Route path="/index" element={<Index />} />
+                <Route path="/signin" element={<Signin />} />
+                <Route path="/login/:userId" element={<Login />} />
+                <Route path="/payment-status" element={<PaymentStatus />} />
+                <Route path="/forgot/password" element={<ForgotPassword />} />
+                <Route path="/otp" element={<Otp />} />
+                <Route path="/changepassword" element={<ChangePassword />} />
+                <Route path="/reset-password/:token" element={<PasswordReset />} />
+                <Route path="/scholars" element={<RootScholarship />} />
+                <Route path="/favorite" element={<Favorite />} />
+                <Route path="/verify" element={<StepComfirmation />} />
+                <Route path="/details/:id" element={<ScholarshipDetailsPage />} />
+                <Route path="/policy" element={<Privacy />} />
+                <Route path="/share" element={<RSSUsage />} />
+                <Route path="/player" element={<Sports />} />
+                <Route path="/sports" element={<Sports />} />
+                <Route path="/starting" element={<StepperElementTwo />} />
+                <Route path="/residence" element={<StepperElementThree />} />
+                <Route path="/sportsfinal" element={<FinalStepperElement />} />
+                <Route path="/login" element={<Login />} />
+                <Route path="/final" element={<StepElement8 />} />
+                <Route path="/JobStep3" element={<JobStep3 />} />
 
-                <Route
-                    exact
-                    path="/forgot/password"
-                    component={ForgotPassword}
-                />
-                <Route 
-                    exact
-                    path="/otp"
-                    component={Otp}
-                />
-                <Route 
-                    exact
-                    path="/changepassword"
-                    component={ChangePassword}
-                />
-                <Route
-                    path="/reset-password/:token"
-                    component={PasswordReset}
-                />
-                <Route exact path="/scholars" component={RootScholarship} />
-                <Route exact path="/favorite" component={Favorite} />
-                <PrivateRoute exact path="/profile" component={MainProfile} />
-                <Route exact path="/verify" component={StepComfirmation} />
-                <Route
-                    exact
-                    path="/details/:id"
-                    component={ScholarshipDetailsPage}
-                />
-                <Route exact path="/policy" component={Privacy} />
-                <Route exact path="/share" component={RSSUsage} />
-                <Route exact path="/player" component={Sports} />
-                {/* <Route exact path="/create" component={FormOne} /> */}
+                {/* Private routes without Layout */}
+                <Route element={<PrivateRoute />}>
+                    <Route path="/profile" element={<MainProfile />} />
+                    <Route path="/applications" element={<RootApplication />} />
+                </Route>
 
-                <PrivateRoute
-                    exact
-                    path="/applications"
-                    component={RootApplication}
-                />
+                {/* Routes with Layout */}
+                <Route element={<Layout />}>
+                    <Route path="/aboutus" element={<AboutUs />} />
+                    <Route path="/stepper" element={<Stepper />} />
+                    <Route path="/JobStep1" element={<JobStep1 />} />
+                    <Route path="/JobStep2" element={<JobStep2 />} />
+                    <Route path="/educationlevel" element={<StepperElementFour />} />
+                    <Route path="/route1" element={<StepperElementSix />} />
+                    <Route path="/route2" element={<StepperElement7 />} />
+                    <Route path="/blog" element={<Blog />} />
+                    <Route path="/blog/:id" element={<BlogDetails />} />
+                    <Route path="/admissions" element={<FindScholarship />} />
+                    <Route path="/sport" element={<SportsUI />} />
+                    <Route path="/admissions/:userId" element={<FindScholarship />} />
+                    <Route path="/contactus" element={<Main />} />
+                    <Route path="/payjobs" element={<PaymentJobs />} />
+                    <Route path="/scholarships" element={<Accordion />} />
+                    <Route path="/testimonals" element={<Testimonals />} />
+                    <Route path="/" element={<Home />} />
 
-                <Route exact path="/sports" component={Sports} />
-                <Route exact path="/starting" component={StepperElementTwo} />
-                <Route
-                    exact
-                    path="/residence"
-                    component={StepperElementThree}
-                />
-                <Route
-                    exact
-                    path="/sportsfinal"
-                    component={FinalStepperElement}
-                />
-                <Route exact path="/login" component={Login} />
-                <Route exact path="/final" component={StepElement8} />
-                <Route exact path="/JobStep3" component={JobStep3} />
-
-                <Layout>
-                    <PrivateRoute path="/payment" component={Payment} />
-                    <Route exact path="/aboutus" component={AboutUs} />
-                    <Route exact path="/stepper" component={Stepper} />
-                    <Route exact path="/JobStep1" component={JobStep1} />
-                    <Route exact path="/JobStep2" component={JobStep2} />
-                   
-                    <Route
-                        exact
-                        path="/educationlevel"
-                        component={StepperElementFour}
-                    />
-                     <Route exact path="/route1" component={StepperElementSix} />
-                     <Route exact path="/route2" component={StepperElement7} />
-                    <Route exact path="/blog" component={Blog} />
-                    <Route exact path="/blog/:id" component={BlogDetails} />
-                    <Route
-                        exact
-                        path="/admissions"
-                        component={FindScholarship}
-                    />
-                    <Route exact path="/sport" component={SportsUI} />
-                    <Route
-                        exact
-                        path="/admissions/:userId"
-                        component={FindScholarship}
-                    />
-
-                    <Route exact path="/contactus" component={Main} />
-                    <Route exact path="/payjobs" component={PaymentJobs} />
-                 
-                    <Route exact path="/scholarships" component={Accordion} />
-                    <Route exact path="/testimonals" component={Testimonals} />
-                    <Route exact path="/" component={Home} />
-                </Layout>
+                    {/* Private routes inside Layout */}
+                    <Route element={<PrivateRoute />}>
+                        <Route path="/payment" element={<Payment />} />
+                    </Route>
+                </Route>
             </Routes>
         </Suspense>
     );

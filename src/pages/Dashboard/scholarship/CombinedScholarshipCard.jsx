@@ -5,14 +5,14 @@ import { useMediaQuery } from "@uidotdev/usehooks";
 import InfiniteScroll from "react-infinite-scroll-component";
 import axios from "axios";
 import { BASE_URL } from "../../../constants/api";
-import { useHistory } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const CombinedScholarshipCard = () => {
 	const [data, setData] = useState([]);
 	const [subscription, setSubscription] = useState(false);
 	const [loading, setLoading] = useState(false);
 	const [pageNumber, setPageNumber] = useState(1);
-	const history = useHistory();
+	const navigate = useNavigate();
 
 	const isSm = useMediaQuery("only screen and (max-width : 700px)");
 
@@ -50,7 +50,7 @@ const CombinedScholarshipCard = () => {
 	};
 
 	const handleRoute = (id) => {
-		history.push(`/details/${id}`);
+		navigate(`/details/${id}`);
 	};
 
 	useEffect(() => {

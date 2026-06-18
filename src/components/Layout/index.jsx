@@ -1,7 +1,7 @@
 import React, { Fragment, useState } from "react";
 import NavHeader from "./NavHeader";
 import Footer from "./Footer";
-import {Link} from 'react-router-dom';
+import { Link, Outlet } from 'react-router-dom';
 // import './footer.css';
 
 
@@ -20,7 +20,7 @@ const Layout = ({ children }) => {
 					flex: 1,
   					minHeight: '100vh'
 				}}
-			>{children}</main>
+			>{children || <Outlet />}</main>
 			<Footer />
 		</div>
 		<div className="footer-bottom">

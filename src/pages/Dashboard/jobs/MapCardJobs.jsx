@@ -4,13 +4,13 @@ import LargeCardNotPaid from "../../../components/card/LargeCardNotPaid";
 import axios from "axios";
 import InfiniteScroll from "react-infinite-scroll-component";
 import { BASE_URL } from "../../../constants/api";
-import { useHistory } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import truncateText from "../../../utils/truncate";
 import { useMediaQuery } from "@uidotdev/usehooks";
 
 const MapCardJobs = ({ path }) => {
   const [data, setData] = useState([]);
-  const history = useHistory();
+  const navigate = useNavigate();
   const [subscription, setSubscription] = useState(false);
   const [pageNumber, setPageNumber] = useState(1);
   const [hasMore, setHasMore] = useState(true);
@@ -64,7 +64,7 @@ const MapCardJobs = ({ path }) => {
       const data = {
         getJobs: true,
       };
-      history.push(`/details/${id}`, data);
+      navigate(`/details/${id}`, { state: data });
     }
   };
 
@@ -94,7 +94,7 @@ const MapCardJobs = ({ path }) => {
               Jobs Available
             </div>
             <p
-              onClick={() => history.push("/scholars")}
+              onClick={() => navigate("/scholars")}
               style={{
                 fontSize: "14px",
                 letterSpacing: "1.6px",

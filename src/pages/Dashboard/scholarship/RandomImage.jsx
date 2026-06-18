@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Modal, Button } from "antd";
-import { useHistory } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 import {
     FacebookShareButton,
@@ -16,7 +16,7 @@ const RandomImageModal = ({ visible, closeModal, images, show }) => {
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
     const [open, setOpen] = useState(false);
 
-    const history = useHistory();
+    const navigate = useNavigate();
 
     const userId = localStorage.getItem("userID");
     const URL = `https://kodoscholarships.com/admissions/${userId}`;
@@ -40,7 +40,7 @@ const RandomImageModal = ({ visible, closeModal, images, show }) => {
 
     const handleClick = () => {
         if (window.location.pathname === "/") {
-            history.push("/stepper");
+            navigate("/stepper");
         }
         //  else {
         //   show();

@@ -7,7 +7,7 @@ import { useEffect } from "react";
 import axiosInstance from "../../api/axiosInstance";
 import { Link } from "react-router-dom";
 import { Modal } from "antd";
-import { useHistory } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { displaySuccessNotification } from "../../utils/Toast";
 import axios from "axios";
 import StatsCards from "./cards";
@@ -30,7 +30,7 @@ function Profile() {
 	const [referCount, setReferCount] = useState(0);
 
 	const [activeTab, setActiveTab] = useState("profileMain");
-	const history = useHistory();
+	const navigate = useNavigate();
 	const info = JSON.parse(localStorage.getItem("userData"));
 
 	const config = {
@@ -108,7 +108,7 @@ function Profile() {
 				localStorage.removeItem("token");
 				localStorage.removeItem("userData");
 				displaySuccessNotification("Account deleted successfully");
-				history.push("/");
+				navigate("/");
 			}
 		} catch (error) {
 			console.log(error);

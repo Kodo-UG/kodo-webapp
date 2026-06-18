@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 import { Select } from "antd";
 import { AiOutlineDown } from "react-icons/ai";
 import { MdOutlineKeyboardArrowUp } from "react-icons/md";
-import { useHistory } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import axiosInstance from "../../../api/axiosInstance";
 const { Option } = Select;
 
@@ -17,7 +17,7 @@ const StepThree = ({ nextStep, prevStep, formData, setFormData }) => {
   const [selectedOption, setSelectedOption] = useState("select a subject");
   const [dropdownOpen, setDropdownOpen] = useState(false); // State to track the dropdown open/close state
 
-  const history = useHistory();
+  const navigate = useNavigate();
   const dispatch = useDispatch();
 
   const fetchData = async () => {

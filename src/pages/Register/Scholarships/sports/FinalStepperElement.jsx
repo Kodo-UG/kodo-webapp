@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "../stepperElement.css";
 import { useDispatch, useSelector } from "react-redux";
-import { useHistory } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 import {
   displayErrorMessage,
@@ -31,7 +31,7 @@ function FinalStepperElement() {
   const formData = useSelector(selectSportsData);
   // console.log("Sports Registration Data:", formData);
 
-  const history = useHistory();
+  const navigate = useNavigate();
   const [loading, setLoading] = useState(false);
   const [gender, setGender] = useState("");
   const [showPassword, setShowPassword] = useState(false);
@@ -91,7 +91,7 @@ function FinalStepperElement() {
       if (res.data.id) {
         displaySuccessMessage("Registration successful");
         clearFormData();
-        history.push("/signin");
+        navigate("/signin");
       } else {
         displayErrorMessage(res.data.message);
       }

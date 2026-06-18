@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./index.css";
-import { Link } from "react-router-dom/cjs/react-router-dom.min";
+import { Link } from "react-router-dom";
 import axiosInstance from "../../../../api/axiosInstance";
 import { useMemo } from "react";
 import { useDispatch } from "react-redux";
