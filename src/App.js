@@ -1,5 +1,4 @@
 import React, { Suspense, lazy } from "react";
-import {useEffect} from 'react';
 import { Route, Routes } from "react-router-dom";
 import Layout from "./components/Layout";
 import PrivateRoute from "./utils/PrivateRoute";
@@ -12,8 +11,8 @@ import RSSUsage from "./pages/share/RSSUsage";
 import Privacy from "./pages/policyPage";
 import ScholarshipDetailsPage from "./pages/Dashboard/scholarship/ScholarshipDetailsPage";
 import BlogDetails from "./pages/Blog/BlogDetails";
-import ScrollToTop from "./components/ScrollTop";
-// import FormOne from "./pages/Sports/FormOne";
+
+
 
 // Lazy-loaded components
 const Home = lazy(() => import("./pages/HomePage"));
@@ -21,7 +20,6 @@ const Otp = lazy(() => import("./pages/otp"));
 const ChangePassword = lazy(() => import("./pages/changepassword"));
 const AboutUs = lazy(() => import("./pages/AboutUs/index"));
 const Blog = lazy(() => import("./pages/Blog"));
-const ContactUs = lazy(() => import("./pages/ContactUs"));
 const Testimonals = lazy(() => import("./pages/Testimonals"));
 const Stepper = lazy(() => import("./pages/Register/Scholarships"));
 const Sports = lazy(() => import("./pages/Register/Scholarships/Sports"));

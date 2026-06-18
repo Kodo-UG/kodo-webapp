@@ -2,9 +2,9 @@ import { ScholarshipCard } from "./ScholarshipCard";
 import FAQ from "./FAQ";
 import CustomContainer from "../components/ShredComponents/CustomerContainer";
 import "./accordion.css"; // Import the CSS file
-import axios from 'axios';
-import { BASE_URL } from "../constants/api";
-import {useState,useEffect} from 'react';
+// import axios from 'axios';
+// import { BASE_URL } from "../constants/api";
+import {useState} from 'react';
 
 export default function Accordion() {
   const [data,setData] = useState([])
@@ -122,7 +122,7 @@ export default function Accordion() {
   const totalPages = Math.ceil(data.length / itemsPerPage);
   const indexOfLastItem = currentPage * itemsPerPage;
   const indexOfFirstItem = indexOfLastItem - itemsPerPage;
-  const currentData = data.slice(indexOfFirstItem, indexOfLastItem);
+  // const currentData = data.slice(indexOfFirstItem, indexOfLastItem);
 
   const handleNextPage = () => {
     if (currentPage < totalPages) {

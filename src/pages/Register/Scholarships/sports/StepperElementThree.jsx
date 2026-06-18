@@ -65,7 +65,7 @@ function StepperElementThree() {
 	};
 
 	const handleCityChange = (e) => {
-		const { name, value } = e.target;
+		const { value } = e.target;
 
 		dispatch(updateSportsData({ field: "city", value: value }));
 	};

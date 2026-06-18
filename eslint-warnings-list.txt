@@ -1,0 +1,401 @@
+FILE: src\accordion\Accordion.jsx
+  Line 10:15 - [no-unused-vars] - 'setData' is assigned a value but never used.
+  Line 13:10 - [no-unused-vars] - 'sports' is assigned a value but never used.
+  Line 13:17 - [no-unused-vars] - 'setSports' is assigned a value but never used.
+  Line 14:10 - [no-unused-vars] - 'free' is assigned a value but never used.
+  Line 14:15 - [no-unused-vars] - 'setFree' is assigned a value but never used.
+  Line 124:9 - [no-unused-vars] - 'indexOfFirstItem' is assigned a value but never used.
+
+FILE: src\components\AboutSection.jsx
+  Line 55:23 - [jsx-a11y/anchor-is-valid] - The href attribute requires a valid value to be accessible. Provide a valid, navigable address as the href value. If you cannot provide a valid href, but still need the element to resemble a link, use a button and change it with appropriate styles. Learn more: https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/HEAD/docs/rules/anchor-is-valid.md
+
+FILE: src\components\FeaturesGrid.jsx
+  Line 2:10 - [no-unused-vars] - 'Card' is defined but never used.
+  Line 2:16 - [no-unused-vars] - 'CardContent' is defined but never used.
+
+FILE: src\components\FeaturesSection.jsx
+  Line 55:15 - [jsx-a11y/anchor-is-valid] - The href attribute requires a valid value to be accessible. Provide a valid, navigable address as the href value. If you cannot provide a valid href, but still need the element to resemble a link, use a button and change it with appropriate styles. Learn more: https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/HEAD/docs/rules/anchor-is-valid.md
+
+FILE: src\components\Layout\Footer.jsx
+  Line 41:31 - [eqeqeq] - Expected '===' and instead saw '=='.
+  Line 48:38 - [eqeqeq] - Expected '===' and instead saw '=='.
+  Line 57:31 - [eqeqeq] - Expected '===' and instead saw '=='.
+  Line 60:33 - [eqeqeq] - Expected '===' and instead saw '=='.
+  Line 84:33 - [eqeqeq] - Expected '===' and instead saw '=='.
+  Line 104:33 - [eqeqeq] - Expected '===' and instead saw '=='.
+  Line 114:28 - [eqeqeq] - Expected '===' and instead saw '=='.
+
+FILE: src\components\Layout\NavHeader.jsx
+  Line 4:16 - [no-unused-vars] - 'X' is defined but never used.
+  Line 75:9 - [no-unused-vars] - 'handleLogout' is assigned a value but never used.
+  Line 134:31 - [eqeqeq] - Expected '===' and instead saw '=='.
+  Line 134:64 - [eqeqeq] - Expected '===' and instead saw '=='.
+  Line 134:97 - [eqeqeq] - Expected '===' and instead saw '=='.
+  Line 134:140 - [eqeqeq] - Expected '===' and instead saw '=='.
+  Line 172:31 - [eqeqeq] - Expected '===' and instead saw '=='.
+  Line 172:64 - [eqeqeq] - Expected '===' and instead saw '=='.
+  Line 172:97 - [eqeqeq] - Expected '===' and instead saw '=='.
+  Line 172:140 - [eqeqeq] - Expected '===' and instead saw '=='.
+
+FILE: src\components\Layout\index.jsx
+  Line 9:9 - [no-unused-vars] - 'open' is assigned a value but never used.
+  Line 9:15 - [no-unused-vars] - 'setOpen' is assigned a value but never used.
+
+FILE: src\components\Layout\steeperLayout\HeaderStepper.jsx
+  Line 2:10 - [no-unused-vars] - 'Link' is defined but never used.
+
+FILE: src\components\Layout\steeperLayout\index.jsx
+  Line 4:8 - [no-unused-vars] - 'Footer' is defined but never used.
+
+FILE: src\components\PaymentPlans\index.jsx
+  Line 11:11 - [no-unused-vars] - 'details' is assigned a value but never used.
+  Line 23:9 - [no-unused-vars] - 'getPaymentOptions' is assigned a value but never used.
+  Line 92:27 - [eqeqeq] - Expected '===' and instead saw '=='.
+  Line 92:46 - [eqeqeq] - Expected '===' and instead saw '=='.
+  Line 125:29 - [eqeqeq] - Expected '===' and instead saw '=='.
+  Line 132:28 - [eqeqeq] - Expected '===' and instead saw '=='.
+  Line 134:31 - [eqeqeq] - Expected '===' and instead saw '=='.
+  Line 148:26 - [eqeqeq] - Expected '===' and instead saw '=='.
+  Line 149:26 - [eqeqeq] - Expected '===' and instead saw '=='.
+  Line 150:26 - [eqeqeq] - Expected '===' and instead saw '=='.
+  Line 161:26 - [eqeqeq] - Expected '===' and instead saw '=='.
+  Line 162:26 - [eqeqeq] - Expected '===' and instead saw '=='.
+  Line 163:26 - [eqeqeq] - Expected '===' and instead saw '=='.
+  Line 226:7 - [no-unused-vars] - 'scholarshipStyle' is assigned a value but never used.
+
+FILE: src\components\PaymentPlans\jobs\index.jsx
+  Line 14:10 - [no-unused-vars] - 'details' is assigned a value but never used.
+  Line 63:24 - [eqeqeq] - Expected '===' and instead saw '=='.
+  Line 63:43 - [eqeqeq] - Expected '===' and instead saw '=='.
+  Line 97:22 - [eqeqeq] - Expected '===' and instead saw '=='.
+  Line 107:21 - [eqeqeq] - Expected '===' and instead saw '=='.
+  Line 109:23 - [eqeqeq] - Expected '===' and instead saw '=='.
+  Line 123:20 - [eqeqeq] - Expected '===' and instead saw '=='.
+  Line 124:20 - [eqeqeq] - Expected '===' and instead saw '=='.
+  Line 125:20 - [eqeqeq] - Expected '===' and instead saw '=='.
+  Line 136:20 - [eqeqeq] - Expected '===' and instead saw '=='.
+  Line 137:20 - [eqeqeq] - Expected '===' and instead saw '=='.
+  Line 138:20 - [eqeqeq] - Expected '===' and instead saw '=='.
+  Line 201:7 - [no-unused-vars] - 'scholarshipStyle' is assigned a value but never used.
+
+FILE: src\components\about\Features.jsx
+  Line 51:15 - [jsx-a11y/anchor-is-valid] - The href attribute requires a valid value to be accessible. Provide a valid, navigable address as the href value. If you cannot provide a valid href, but still need the element to resemble a link, use a button and change it with appropriate styles. Learn more: https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/HEAD/docs/rules/anchor-is-valid.md
+
+FILE: src\components\about\VideoSection.jsx
+  Line 2:10 - [no-unused-vars] - 'Play' is defined but never used.
+
+FILE: src\components\alert\index.jsx
+  Line 3:10 - [no-unused-vars] - 'Button' is defined but never used.
+  Line 4:10 - [no-unused-vars] - 'BsBookmark' is defined but never used.
+  Line 4:22 - [no-unused-vars] - 'BsThreeDotsVertical' is defined but never used.
+  Line 5:10 - [no-unused-vars] - 'FaAward' is defined but never used.
+  Line 5:19 - [no-unused-vars] - 'FaRegCalendarAlt' is defined but never used.
+
+FILE: src\components\card\CardScholarshipSubscribed.jsx
+  Line 4:10 - [no-unused-vars] - 'useMediaQuery' is defined but never used.
+
+FILE: src\components\card\FreeScholarship.jsx
+  Line 162:17 - [no-dupe-keys] - Duplicate key 'fontFamily'.
+
+FILE: src\components\card\LargeCard.jsx
+  Line 42:17 - [no-unused-vars] - 'res' is assigned a value but never used.
+
+FILE: src\components\card\LargeCardNotPaid.jsx
+  Line 21:8 - [no-unused-vars] - 'isSm' is assigned a value but never used.
+
+FILE: src\components\card\Scholarshipcard.jsx
+  Line 2:29 - [no-unused-vars] - 'Row' is defined but never used.
+
+FILE: src\components\card\SmallScreen.jsx
+  Line 3:10 - [no-unused-vars] - 'AiOutlineEye' is defined but never used.
+  Line 28:8 - [no-unused-vars] - 'isSm' is assigned a value but never used.
+
+FILE: src\components\contactForm\ContactForm.jsx
+  Line 15:8 - [no-unused-vars] - 'isLg' is assigned a value but never used.
+  Line 18:8 - [no-unused-vars] - 'isEl' is assigned a value but never used.
+  Line 24:9 - [no-unused-vars] - 'loading' is assigned a value but never used.
+  Line 43:19 - [eqeqeq] - Expected '===' and instead saw '=='.
+
+FILE: src\components\testimonials\TestimonialHeader.jsx
+  Line 21:11 - [jsx-a11y/img-redundant-alt] - Redundant alt attribute. Screen-readers already announce `img` tags as an image. You don’t need to use the words `image`, `photo,` or `picture` (or any specified custom words) in the alt prop.
+
+FILE: src\data\testimonials.js
+  Line 3:8 - [no-unused-vars] - 'image3' is defined but never used.
+
+FILE: src\pages\AboutUs\AboutUs1.jsx
+  Line 1:17 - [no-unused-vars] - 'Fragment' is defined but never used.
+
+FILE: src\pages\Blog\BlogCard.jsx
+  Line 24:25 - [jsx-a11y/anchor-is-valid] - The href attribute requires a valid value to be accessible. Provide a valid, navigable address as the href value. If you cannot provide a valid href, but still need the element to resemble a link, use a button and change it with appropriate styles. Learn more: https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/HEAD/docs/rules/anchor-is-valid.md
+
+FILE: src\pages\Blog\BlogDetails.jsx
+  Line 8:8 - [no-unused-vars] - 'moment' is defined but never used.
+  Line 61:8 - [react-hooks/exhaustive-deps] - React Hook useEffect has a missing dependency: 'getBlog'. Either include it or remove the dependency array.
+
+FILE: src\pages\Blog\Comment.jsx
+  Line 10:9 - [no-unused-vars] - 'hover' is assigned a value but never used.
+  Line 10:16 - [no-unused-vars] - 'setHover' is assigned a value but never used.
+  Line 22:8 - [no-unused-vars] - 'commentStyle' is assigned a value but never used.
+  Line 31:8 - [no-unused-vars] - 'hovered' is assigned a value but never used.
+  Line 67:8 - [no-unused-vars] - 'handleCommentReply' is assigned a value but never used.
+
+FILE: src\pages\Blog\index.jsx
+  Line 67:6 - [react-hooks/exhaustive-deps] - React Hook useEffect has a missing dependency: 'getBlogs'. Either include it or remove the dependency array.
+
+FILE: src\pages\ContactUs\Contact.jsx
+  Line 10:9 - [no-unused-vars] - 'isLg' is assigned a value but never used.
+  Line 13:9 - [no-unused-vars] - 'isEl' is assigned a value but never used.
+
+FILE: src\pages\ContactUs\CustomForm.jsx
+  Line 4:3 - [no-unused-vars] - 'displaySuccessMessage' is defined but never used.
+  Line 32:22 - [eqeqeq] - Expected '===' and instead saw '=='.
+
+FILE: src\pages\ContactUs\Main.jsx
+  Line 34:9 - [no-unused-vars] - 'isMd' is assigned a value but never used.
+  Line 35:9 - [no-unused-vars] - 'isLg' is assigned a value but never used.
+
+FILE: src\pages\ContactUs\index.jsx
+  Line 1:17 - [no-unused-vars] - 'Fragment' is defined but never used.
+  Line 2:8 - [no-unused-vars] - 'EmbeddedMap' is defined but never used.
+  Line 3:8 - [no-unused-vars] - 'CustomForm' is defined but never used.
+
+FILE: src\pages\Dashboard\Header.jsx
+  Line 6:8 - [no-unused-vars] - 'axiosInstance' is defined but never used.
+  Line 14:10 - [no-unused-vars] - 'PiUser' is defined but never used.
+  Line 17:9 - [no-unused-vars] - 'notifications' is defined but never used.
+  Line 35:8 - [no-unused-vars] - 'deleteMessage' is assigned a value but never used.
+  Line 36:53 - [eqeqeq] - Expected '!==' and instead saw '!='.
+  Line 41:8 - [no-unused-vars] - 'togglePushMenu' is assigned a value but never used.
+  Line 45:8 - [no-unused-vars] - 'info' is assigned a value but never used.
+  Line 70:10 - [no-unused-vars] - '_data' is assigned a value but never used.
+  Line 70:17 - [no-unused-vars] - 'refetch' is assigned a value but never used.
+  Line 210:8 - [jsx-a11y/anchor-is-valid] - The href attribute requires a valid value to be accessible. Provide a valid, navigable address as the href value. If you cannot provide a valid href, but still need the element to resemble a link, use a button and change it with appropriate styles. Learn more: https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/HEAD/docs/rules/anchor-is-valid.md
+
+FILE: src\pages\Dashboard\Menu.jsx
+  Line 1:27 - [no-unused-vars] - 'useEffect' is defined but never used.
+  Line 5:8 - [no-unused-vars] - 'axios' is defined but never used.
+  Line 14:10 - [no-unused-vars] - 'PiGraduationCap' is defined but never used.
+  Line 18:18 - [no-unused-vars] - 'setData' is assigned a value but never used.
+  Line 19:28 - [no-unused-vars] - 'setSidebarVisible' is assigned a value but never used.
+  Line 23:11 - [no-unused-vars] - 'config' is assigned a value but never used.
+  Line 72:11 - [no-unused-vars] - 'iconstyle' is assigned a value but never used.
+
+FILE: src\pages\Dashboard\Profile\index.jsx
+  Line 3:8 - [no-unused-vars] - 'MyHeader' is defined but never used.
+  Line 4:8 - [no-unused-vars] - 'Menu' is defined but never used.
+
+FILE: src\pages\Dashboard\jobs\CombinedJobs.jsx
+  Line 65:6 - [react-hooks/exhaustive-deps] - React Hook useEffect has a missing dependency: 'fetchJobs'. Either include it or remove the dependency array.
+
+FILE: src\pages\Dashboard\jobs\Jobs.jsx
+  Line 5:8 - [no-unused-vars] - 'MatchedCard' is defined but never used.
+
+FILE: src\pages\Dashboard\jobs\MapCardJobs.jsx
+  Line 18:11 - [no-unused-vars] - 'isLg' is assigned a value but never used.
+  Line 73:6 - [react-hooks/exhaustive-deps] - React Hook useEffect has a missing dependency: 'fetchJobs'. Either include it or remove the dependency array.
+
+FILE: src\pages\Dashboard\jobs\TitleContent.jsx
+  Line 10:9 - [no-unused-vars] - 'loading' is assigned a value but never used.
+
+FILE: src\pages\Dashboard\scholarship\CombinedScholarshipCard.jsx
+  Line 13:18 - [no-unused-vars] - 'setLoading' is assigned a value but never used.
+  Line 17:8 - [no-unused-vars] - 'isSm' is assigned a value but never used.
+  Line 58:5 - [react-hooks/exhaustive-deps] - React Hook useEffect has a missing dependency: 'getScholarship'. Either include it or remove the dependency array.
+
+FILE: src\pages\Dashboard\scholarship\MapCardData.jsx
+  Line 90:6 - [react-hooks/exhaustive-deps] - React Hook useEffect has a missing dependency: 'getScholarship'. Either include it or remove the dependency array.
+
+FILE: src\pages\Dashboard\scholarship\MatchedCard.jsx
+  Line 4:10 - [no-unused-vars] - 'MdArrowForwardIos' is defined but never used.
+  Line 5:10 - [no-unused-vars] - 'SiFiles' is defined but never used.
+  Line 19:9 - [no-unused-vars] - 'jobCount' is assigned a value but never used.
+
+FILE: src\pages\Dashboard\scholarship\RandomImage.jsx
+  Line 12:5 - [no-unused-vars] - 'RedditShareButton' is defined but never used.
+  Line 30:8 - [react-hooks/exhaustive-deps] - React Hook useEffect has a missing dependency: 'showRandomImage'. Either include it or remove the dependency array.
+
+FILE: src\pages\Dashboard\scholarship\Scholarship.jsx
+  Line 3:8 - [no-unused-vars] - 'MatchedCard' is defined but never used.
+
+FILE: src\pages\Dashboard\scholarship\ScholarshipDetails.jsx
+  Line 22:10 - [no-unused-vars] - 'newWindow' is assigned a value but never used.
+  Line 22:21 - [no-unused-vars] - 'setNewWindow' is assigned a value but never used.
+  Line 94:6 - [react-hooks/exhaustive-deps] - React Hook useEffect has a missing dependency: 'getScholarship'. Either include it or remove the dependency array.
+
+FILE: src\pages\Dashboard\scholarship\index.jsx
+  Line 74:5 - [react-hooks/exhaustive-deps] - React Hook useEffect has a missing dependency: 'getScholarship'. Either include it or remove the dependency array.
+
+FILE: src\pages\ForgotPassword\index.jsx
+  Line 2:10 - [no-unused-vars] - 'Link' is defined but never used.
+  Line 4:10 - [no-unused-vars] - 'BiEnvelope' is defined but never used.
+  Line 28:8 - [no-unused-vars] - 'handleChange' is assigned a value but never used.
+  Line 41:24 - [eqeqeq] - Expected '===' and instead saw '=='.
+  Line 82:11 - [jsx-a11y/alt-text] - img elements must have an alt prop, either with meaningful text, or an empty string for decorative images.
+
+FILE: src\pages\HomePage\index.jsx
+  Line 1:17 - [no-unused-vars] - 'Fragment' is defined but never used.
+  Line 1:27 - [no-unused-vars] - 'useState' is defined but never used.
+  Line 1:37 - [no-unused-vars] - 'useEffect' is defined but never used.
+  Line 6:8 - [no-unused-vars] - 'Footer' is defined but never used.
+
+FILE: src\pages\Login\index.jsx
+  Line 6:10 - [no-unused-vars] - 'BiEnvelope' is defined but never used.
+  Line 7:10 - [no-unused-vars] - 'AiFillEyeInvisible' is defined but never used.
+  Line 7:30 - [no-unused-vars] - 'AiFillEye' is defined but never used.
+  Line 22:12 - [no-unused-vars] - 'modalOpen' is assigned a value but never used.
+  Line 34:11 - [no-unused-vars] - 'handleChange' is assigned a value but never used.
+  Line 48:11 - [no-unused-vars] - 'inputStyles' is assigned a value but never used.
+  Line 118:23 - [jsx-a11y/alt-text] - img elements must have an alt prop, either with meaningful text, or an empty string for decorative images.
+  Line 196:31 - [eqeqeq] - Expected '===' and instead saw '=='.
+
+FILE: src\pages\PasswordReset\index.jsx
+  Line 33:20 - [eqeqeq] - Expected '===' and instead saw '=='.
+
+FILE: src\pages\Register\Scholarships\Sports.jsx
+  Line 1:17 - [no-unused-vars] - 'useEffect' is defined but never used.
+  Line 8:10 - [no-unused-vars] - 'step' is assigned a value but never used.
+  Line 10:9 - [no-unused-vars] - 'dispatch' is assigned a value but never used.
+  Line 13:9 - [no-unused-vars] - 'userId' is assigned a value but never used.
+  Line 15:9 - [no-unused-vars] - 'nextStep' is assigned a value but never used.
+  Line 17:9 - [no-unused-vars] - 'prevStep' is assigned a value but never used.
+
+FILE: src\pages\Register\Scholarships\StepComfirmation.jsx
+  Line 12:9 - [no-unused-vars] - 'TextArea' is assigned a value but never used.
+  Line 22:11 - [no-unused-vars] - 'name' is assigned a value but never used.
+  Line 36:24 - [eqeqeq] - Expected '===' and instead saw '=='.
+
+FILE: src\pages\Register\Scholarships\StepElement8.jsx
+  Line 40:9 - [no-unused-vars] - 'isMd' is assigned a value but never used.
+  Line 43:9 - [no-unused-vars] - 'isLg' is assigned a value but never used.
+  Line 49:13 - [no-unused-vars] - 'name' is assigned a value but never used.
+  Line 61:13 - [no-unused-vars] - 'name' is assigned a value but never used.
+  Line 65:13 - [no-unused-vars] - 'name' is assigned a value but never used.
+  Line 69:13 - [no-unused-vars] - 'name' is assigned a value but never used.
+  Line 73:13 - [no-unused-vars] - 'name' is assigned a value but never used.
+  Line 129:23 - [jsx-a11y/alt-text] - img elements must have an alt prop, either with meaningful text, or an empty string for decorative images.
+
+FILE: src\pages\Register\Scholarships\StepTen.jsx
+  Line 2:10 - [no-unused-vars] - 'useDispatch' is defined but never used.
+  Line 2:23 - [no-unused-vars] - 'useSelector' is defined but never used.
+  Line 3:10 - [no-unused-vars] - 'clearFormData' is defined but never used.
+  Line 3:25 - [no-unused-vars] - 'updateFormData' is defined but never used.
+  Line 4:8 - [no-unused-vars] - 'api' is defined but never used.
+  Line 12:9 - [no-unused-vars] - 'TextArea' is assigned a value but never used.
+  Line 16:18 - [no-unused-vars] - 'setLoading' is assigned a value but never used.
+  Line 22:11 - [no-unused-vars] - 'name' is assigned a value but never used.
+  Line 33:24 - [eqeqeq] - Expected '===' and instead saw '=='.
+
+FILE: src\pages\Register\Scholarships\StepThree.jsx
+  Line 23:9 - [react-hooks/exhaustive-deps] - The 'fetchData' function makes the dependencies of useEffect Hook (at line 36) change on every render. Move it inside the useEffect callback. Alternatively, wrap the definition of 'fetchData' in its own useCallback() Hook.
+
+FILE: src\pages\Register\Scholarships\StepTwo.jsx
+  Line 2:23 - [no-unused-vars] - 'useSelector' is defined but never used.
+  Line 38:9 - [no-unused-vars] - 'selectedButtonId' is assigned a value but never used.
+
+FILE: src\pages\Register\Scholarships\StepperElement7.jsx
+  Line 38:13 - [no-unused-vars] - 'name' is assigned a value but never used.
+
+FILE: src\pages\Register\Scholarships\StepperElementFour.jsx
+  Line 7:8 - [no-unused-vars] - 'Footer' is defined but never used.
+  Line 9:23 - [no-unused-vars] - 'list' is defined but never used.
+  Line 50:11 - [no-unused-vars] - 'changeDivStyle' is defined but never used.
+  Line 55:8 - [no-unused-vars] - 'navigate' is assigned a value but never used.
+  Line 60:8 - [no-unused-vars] - 'isMd' is assigned a value but never used.
+  Line 64:8 - [no-unused-vars] - 'isLg' is assigned a value but never used.
+
+FILE: src\pages\Register\Scholarships\index.jsx
+  Line 37:8 - [no-unused-vars] - 'params' is assigned a value but never used.
+  Line 47:5 - [react-hooks/exhaustive-deps] - React Hook useEffect has missing dependencies: 'dispatch' and 'userId'. Either include them or remove the dependency array.
+
+FILE: src\pages\Register\Scholarships\jobs\JobStep1.jsx
+  Line 9:8 - [no-unused-vars] - 'FreeJobs' is defined but never used.
+  Line 10:8 - [no-unused-vars] - 'FreeJobsLarge' is defined but never used.
+  Line 13:8 - [no-unused-vars] - 'truncateText' is defined but never used.
+  Line 14:8 - [no-unused-vars] - 'NavHeader' is defined but never used.
+  Line 19:9 - [no-unused-vars] - 'isSm' is assigned a value but never used.
+  Line 21:10 - [no-unused-vars] - 'apply' is assigned a value but never used.
+  Line 22:22 - [no-unused-vars] - 'setPageNumber' is assigned a value but never used.
+  Line 23:10 - [no-unused-vars] - 'freeJobs' is assigned a value but never used.
+  Line 56:6 - [react-hooks/exhaustive-deps] - React Hook useEffect has missing dependencies: 'dispatch' and 'userId'. Either include them or remove the dependency array.
+  Line 60:6 - [react-hooks/exhaustive-deps] - React Hook useEffect has a missing dependency: 'getFreeJobs'. Either include it or remove the dependency array.
+  Line 78:9 - [no-unused-vars] - 'handleRoute' is assigned a value but never used.
+
+FILE: src\pages\Register\Scholarships\jobs\JobStep2.jsx
+  Line 230:8 - [no-unused-vars] - 'navigate' is assigned a value but never used.
+  Line 244:11 - [no-unused-vars] - 'name' is assigned a value but never used.
+
+FILE: src\pages\Register\Scholarships\jobs\JobStep3.jsx
+  Line 74:19 - [eqeqeq] - Expected '===' and instead saw '=='.
+  Line 80:19 - [eqeqeq] - Expected '===' and instead saw '=='.
+  Line 117:10 - [jsx-a11y/alt-text] - img elements must have an alt prop, either with meaningful text, or an empty string for decorative images.
+
+FILE: src\pages\Register\Scholarships\sports\FinalStepperElement.jsx
+  Line 37:24 - [no-unused-vars] - 'setShowPassword' is assigned a value but never used.
+  Line 42:9 - [no-unused-vars] - 'isMd' is assigned a value but never used.
+  Line 45:9 - [no-unused-vars] - 'isLg' is assigned a value but never used.
+  Line 52:13 - [no-unused-vars] - 'name' is assigned a value but never used.
+  Line 64:13 - [no-unused-vars] - 'name' is assigned a value but never used.
+  Line 68:13 - [no-unused-vars] - 'name' is assigned a value but never used.
+  Line 72:13 - [no-unused-vars] - 'name' is assigned a value but never used.
+  Line 76:13 - [no-unused-vars] - 'name' is assigned a value but never used.
+
+FILE: src\pages\Register\Scholarships\sports\StepperElementOne.jsx
+  Line 52:12 - [no-unused-vars] - 'changeDivStyle' is defined but never used.
+  Line 57:9 - [no-unused-vars] - 'navigate' is assigned a value but never used.
+  Line 290:15 - [jsx-a11y/anchor-is-valid] - The href attribute requires a valid value to be accessible. Provide a valid, navigable address as the href value. If you cannot provide a valid href, but still need the element to resemble a link, use a button and change it with appropriate styles. Learn more: https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/HEAD/docs/rules/anchor-is-valid.md
+  Line 297:15 - [jsx-a11y/anchor-is-valid] - The href attribute requires a valid value to be accessible. Provide a valid, navigable address as the href value. If you cannot provide a valid href, but still need the element to resemble a link, use a button and change it with appropriate styles. Learn more: https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/HEAD/docs/rules/anchor-is-valid.md
+
+FILE: src\pages\Register\StepperCard.jsx
+  Line 8:8 - [no-unused-vars] - 'Scholarship' is defined but never used.
+  Line 14:9 - [no-unused-vars] - 'isMd' is assigned a value but never used.
+  Line 18:9 - [no-unused-vars] - 'isLg' is assigned a value but never used.
+  Line 46:11 - [jsx-a11y/alt-text] - img elements must have an alt prop, either with meaningful text, or an empty string for decorative images.
+
+FILE: src\pages\Register\index.jsx
+  Line 23:22 - [no-unused-vars] - 'setPageNumber' is assigned a value but never used.
+  Line 68:6 - [react-hooks/exhaustive-deps] - React Hook useEffect has missing dependencies: 'dispatch' and 'userId'. Either include them or remove the dependency array.
+  Line 72:6 - [react-hooks/exhaustive-deps] - React Hook useEffect has a missing dependency: 'getFreeScholarships'. Either include it or remove the dependency array.
+
+FILE: src\pages\Sports\Sports.jsx
+  Line 12:8 - [no-unused-vars] - 'isLargeDevice' is assigned a value but never used.
+  Line 15:8 - [no-unused-vars] - 'isExtraLargeDevice' is assigned a value but never used.
+  Line 19:8 - [no-unused-vars] - 'navigate' is assigned a value but never used.
+
+FILE: src\pages\changepassword\index.jsx
+  Line 51:29 - [eqeqeq] - Expected '===' and instead saw '=='.
+  Line 82:13 - [jsx-a11y/alt-text] - img elements must have an alt prop, either with meaningful text, or an empty string for decorative images.
+
+FILE: src\pages\payment\index.jsx
+  Line 9:9 - [no-unused-vars] - 'loading' is assigned a value but never used.
+
+FILE: src\pages\payment\jobs\index.jsx
+  Line 9:9 - [no-unused-vars] - 'loading' is assigned a value but never used.
+
+FILE: src\pages\profile\ProfileComponent.jsx
+  Line 15:9 - [no-unused-vars] - 'bg' is assigned a value but never used.
+  Line 15:13 - [no-unused-vars] - 'setBg' is assigned a value but never used.
+
+FILE: src\pages\profile\cards.jsx
+  Line 6:11 - [no-unused-vars] - 'isXl' is assigned a value but never used.
+
+FILE: src\pages\profile\index.jsx
+  Line 22:13 - [no-unused-vars] - 'setId' is assigned a value but never used.
+  Line 24:9 - [no-unused-vars] - 'subscription' is assigned a value but never used.
+  Line 34:8 - [no-unused-vars] - 'info' is assigned a value but never used.
+  Line 185:5 - [react-hooks/exhaustive-deps] - React Hook useEffect has missing dependencies: 'fetchFavorites', 'fetchUser', 'getApplied', 'getRefferals', and 'getScholarship'. Either include them or remove the dependency array.
+
+FILE: src\pages\share\Back.js
+  Line 2:10 - [no-unused-vars] - 'useEffect' is defined but never used.
+  Line 80:11 - [jsx-a11y/anchor-is-valid] - The href attribute is required for an anchor to be keyboard accessible. Provide a valid, navigable address as the href value. If you cannot provide an href, but still need the element to resemble a link, use a button and change it with appropriate styles. Learn more: https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/HEAD/docs/rules/anchor-is-valid.md
+  Line 83:11 - [jsx-a11y/anchor-is-valid] - The href attribute is required for an anchor to be keyboard accessible. Provide a valid, navigable address as the href value. If you cannot provide an href, but still need the element to resemble a link, use a button and change it with appropriate styles. Learn more: https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/HEAD/docs/rules/anchor-is-valid.md
+  Line 91:11 - [jsx-a11y/anchor-is-valid] - The href attribute is required for an anchor to be keyboard accessible. Provide a valid, navigable address as the href value. If you cannot provide an href, but still need the element to resemble a link, use a button and change it with appropriate styles. Learn more: https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/HEAD/docs/rules/anchor-is-valid.md
+
+FILE: src\pages\share\CustomShareComponent.jsx
+  Line 9:3 - [no-unused-vars] - 'RedditShareButton' is defined but never used.
+
+FILE: src\store.js
+  Line 4:2 - [no-unused-vars] - 'getDefaultMiddleware' is defined but never used.
+
+FILE: src\utils\converter.js
+  Line 88:11 - [no-unused-vars] - 'currencies' is assigned a value but never used.
+

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import { Link, useNavigate} from "react-router-dom";
+import {  useNavigate} from "react-router-dom";
 import { displayErrorMessage, displaySuccessMessage } from "../../utils/Toast";
-import { BiEnvelope } from "react-icons/bi";
+// import { BiEnvelope } from "react-icons/bi";
 import axiosInstance from "../../api/axiosInstance";
 import "../Login/custom.css";
 import NavHeader from "../../components/Layout/NavHeader";
@@ -28,9 +28,9 @@ export default function Otp() {
     
 
     const navigate = useNavigate();
-    const handleChange = (setState) => (e) => {
-        setState(e.target.value);
-    };
+    // const handleChange = (setState) => (e) => {
+    //     setState(e.target.value);
+    // };
 
     const handleSubmit = async (e) => {
         setLoading(true);
@@ -42,7 +42,7 @@ export default function Otp() {
                 otp: otp,
             });
             const data = res.data;
-            if (data.statusCode == 200) {
+            if (data.statusCode === 200) {
                 setLoading(false);
                 displaySuccessMessage(
                     `otp verification successfull`
@@ -87,6 +87,7 @@ export default function Otp() {
                                     src={logologin}
                                     width={100}
                                     height={100}
+                                    alt='login-image'
                                   />
                                   <h3
                                     style={{

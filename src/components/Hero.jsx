@@ -9,8 +9,8 @@ function HeroSection() {
 
   const isSm = useMediaQuery('only screen and (max-width:700px)');
   const isMd = useMediaQuery('only screen and (max-width: 1023px)');
-  const isLg = useMediaQuery('onlyscreen and (min-width:1024px)');
-  const isXl = useMediaQuery('only screen and (min-width:1280px)');
+  // const isLg = useMediaQuery('onlyscreen and (min-width:1024px)');
+  // const isXl = useMediaQuery('only screen and (min-width:1280px)');
 
   return (
     <div className="hero-section"
